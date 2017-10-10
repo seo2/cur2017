@@ -84,8 +84,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                   </div>
                   <div class="bullet-content">
                     <h2><?php bloginfo('name'); ?></h2>
-                    <p>La Cantera 2325<br>
-                    Coquimbo<br>
+                    <p>Av. Lomas de la luz 4650, Curauma,<br>
+                    Valparaíso<br>
                     <a href="https://www.google.com/maps?ll=-29.976287,-71.295227&z=18&t=m&hl=es-ES&gl=US&mapclient=apiv3&cid=3780865414655291440" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
                   </div>
                 </li>
@@ -102,8 +102,9 @@ if(ICL_LANGUAGE_CODE=='en'){
                     <p>SEGUNDA A DOMINGO DAS 10:30H ATÉ AS 21:00H.</p>
 					<?php }else{  ?>
                     <h2>horarios</h2>
-                    <p>lunes a domingo y festivos
-                    de 10 a 21 hrs.</p>
+                    <p>Lunes a sábado de 10 a 21 hrs.
+                    Domingo y festivos de 11 a 21 hrs.
+                    </p>
 					<?php } ?>
                   </div>
                 </li>
