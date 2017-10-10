@@ -1,0 +1,116 @@
+section.visitanos {
+  padding: 45px 0;
+  position: relative;
+  border-top:1px solid $gris;
+
+    h2 {
+        @include clarendon(20px, black);
+        text-transform: uppercase;
+        position: absolute;
+        top: -10px;
+        background-color: #fff;
+        display: inline-block;
+        width: 170px;
+    }
+    .logos_pak_lg{
+   
+  
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          li{
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-left: 21px;
+            width: 120px;
+            padding: 0;
+            &:first-child {
+              margin-left: 0px;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+
+             a{    
+                  display: block;
+                  margin: 0;
+                  padding: 0;
+
+                  img {
+                      &.logo_size {
+                        width: 110px;
+                        margin-top: -5px;
+                      }
+                      &.negative_top {
+                        margin-top: -6px;
+                      }
+                      &.positive_top {
+                        margin-top: 5px;
+                      }
+                    
+                  }
+              }
+
+
+           
+           
+          }
+        }
+
+    }
+    .logos_pak_xs {
+      .slider_logos_mall {
+          .item{
+            a{
+              img{
+                  max-width: 130px;
+              }
+            }
+          }
+
+          .owl-next, .owl-prev {
+                    width: 34px;
+                    height: 164px;
+                    position: absolute;
+                    text-indent: -9999px;
+                    top: 50%;
+                    margin-top: -82px;
+                    opacity: 1;
+                    transition:all 0.2s ease-in-out;
+                    display: block !important;
+                    z-index: 9999 !important;
+                     &:hover {
+                      cursor: pointer;
+                      background-color: transparent;
+                      opacity: 0.5;
+                    }
+           }
+
+            .owl-next {
+                background: url(../img/next.png) no-repeat !important;
+                right: 0px;
+                    @media (max-width:1024px){
+                      right: 0px;
+                     
+                  }
+                   @media (max-width:768px){
+                      right: 0px;
+                 }
+            }
+            .owl-prev {
+                background: url(../img/prev.png) no-repeat !important;
+                left: 0px;
+                @media (max-width:1024px){
+                    left: 0px;
+                }
+                 @media (max-width:768px){
+                      left: 0px;
+                  }
+            }
+
+      }
+    }
+
+}

@@ -1,0 +1,300 @@
+#caja_datos_tienda {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 1001;
+    width: 100%;
+    min-height: 480px;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+    .container{
+      width: 1140px;
+    }
+    @media(max-width: 1439px){
+      .container{
+        width: 100%;
+      }
+    }
+   
+      .datos_tienda {
+        position: relative;
+        min-height: 480px;
+         @media(max-width: 991px){
+                    min-height: 0;
+                 
+              }
+            h2{
+              a{
+                 @include clarendon(18px, black);
+                 text-transform: uppercase;
+              }
+                   
+            }
+            .divider{
+              color:black;
+              margin:20px 0 70px 50px;
+              overflow:hidden;
+              text-align:left;  
+              position: absolute;
+              left: 0; 
+              z-index: 1;
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+          
+            }
+            .divider:before{
+              margin-right: 10px;
+            }
+
+          .datos{
+                  // position: relative;
+                  // left: auto;
+                  // top: auto;
+                  // transform: none;
+                  @include centerer(false, true);
+                  padding: 0 20px 0 0;
+                  @media(max-width: 1439px){
+                    @include centerer(true, true);
+                      padding: 0;
+                  }
+                 
+                  z-index: 0;
+                  @media(max-width: 991px){
+                       width: 80%;
+                  }
+                  h3{
+                    
+                    @include bold(14px, black);   
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                  }
+                  h4{
+  
+                      @include bold(14px, $rojo);
+                      margin-bottom: 15px;
+                      text-transform: uppercase;
+                      letter-spacing: 3px;
+                  }
+                  p{
+                      @include regular(14px ,black);
+                      margin-bottom: 30px;
+
+                  }
+                  a{
+                    display: inline-block; 
+
+                      &.btn_mapa {
+                         display: inline-block;
+                         transition: all .5s ease;
+                          i{
+
+                            &.fa-map-marker {
+                              font-size: 28px;
+                            }
+                           
+                          }
+                         @extend .btn_rojo;
+                            font-size: 15px;
+                            color: white;
+                            text-align: center;
+                            padding: 4px 30px;
+                            text-transform: uppercase;
+                            height: 43px;
+                            transition: all 0.2s ease-in-out;
+                            letter-spacing: 3px;
+                            margin-bottom: 20px;
+                            border-radius: 0;
+
+                        &:hover {
+                          border: 1px solid black;
+                          color: black;
+                        }
+                        @media(max-width: 991px){
+                              padding: 6px;
+                              font-size: 12px;
+                        }
+                      }
+                      &.url {
+                         transition: all .5s ease;
+                        @include bold(14px, black);
+                         display: block; 
+                         letter-spacing: 4px;
+                         display: inline-block; 
+
+                        &:hover {
+                              color: $rojo;
+                           
+                        }
+                      }
+                  }
+                  .logo_tienda{
+                    margin-bottom: 30px;
+                    width: 150px;
+                  }
+                 .share_tienda{
+                  margin-top: 10px;
+                          ul {
+                              list-style-type: none;
+                              margin: 0;
+                              padding: 0;
+                              li{
+                                display: inline;
+                                margin-right: 10px;
+                                &:first-child {
+                                margin-left: 0;
+                                }
+                                &:last-child{
+                                margin-right: 0;
+                                }
+                                a{
+                                  display: inline-block;
+                                  i{
+                                    transition: all 0.3s ease;
+                                    &.fa {
+                                      color: $gris;
+                                      font-size: 25px;
+                                    }
+                                    &:hover {
+                                      color:darken($gris, 20%);;
+                                    }
+                                  }
+
+                                }
+                              }
+                            }
+                    } // share tienda
+
+          } // datos
+
+            .img_tienda{
+              background-size: cover !important;
+              background-position: top center !important;
+              display: block !important;
+              background-repeat: no-repeat !important;
+              min-height: 480px;
+              position: relative;
+              width: 100%;
+              @media(max-width: 767px){
+                    min-height: 300px;
+              }
+
+              .marco{
+                // max-width: 500px;
+                // max-height: 480px;
+                border: 1px solid white;
+                @include centerer(true, true);
+                width: 90%;
+                height: 90%;
+                z-index: 1001;
+              }
+
+                     .box_dcto {
+                        @include centerer(true, true);
+                          background-color: rgba(0,0,0,0.4);
+                          width: 100%;
+                          height: 100%;
+                          padding: 20px;
+                          z-index: 100;
+
+                          // @media(max-width:767px){
+                          //     width: 80%;
+                          //     height: 80%;
+                          // }
+
+                         .datos_dcto{
+                          @include centerer(true, true);
+                          width: 62%;
+                          @media(max-width: 1024px){
+                            width: 65%;
+                          }
+                           @media(max-width: 991px){
+                            width: 150px;
+                          }
+                          @include centerer(true, true);
+
+                          .num{
+                              @include bold(60px,white);
+                              line-height: 1;
+                              text-align: center;
+                            //  float: left;
+                              letter-spacing: -4px;
+                                @media(max-width: 1024px){
+                                font-size: 70px;
+                               }
+                              @media(max-width: 767px){
+                                font-size: 70px;
+                               }
+                                
+                            }
+
+                            .box_percent{
+                              float:right;
+                              .text_percent{
+                                  @include bold(50px,white);
+                                  line-height: 1;
+                                   @media(max-width: 1024px){
+                                    font-size: 40px;
+                                  }
+                              }
+                              .text_dcto{
+                                  @include bold(20px,white);
+                                  text-transform: uppercase;
+                                   @media(max-width:1024px){
+                                    font-size: 14px;
+                                  }
+                              }
+                            }
+                            p{
+                               @include bold(12px,white);
+                               margin-top: 10px;
+                             }
+                         }
+
+                      }
+                      // img {
+                      //    transition: all .5s ease;
+                      //    opacity: 1;
+                      // }
+                      
+                        // &:hover  {
+                        //   .box_dcto{
+                        //     background-color: rgba(0,0,0,0.8);
+                        //   }
+                              
+                        //       img{
+                        //         opacity: 0.9;
+                        //         transform: scale(1.05);
+                        //     }
+                          
+                        // }
+              
+                      
+             
+
+
+
+           
+       
+                   
+                 
+               
+            }
+
+      } // datos tienda
+        .search_home_xs {
+          margin-top: 0;
+        }
+
+
+
+} /* end caja datos tienda */

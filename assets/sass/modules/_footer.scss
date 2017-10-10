@@ -1,0 +1,211 @@
+footer{
+  position: relative;
+  .btn_inversionistas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+     padding-top: 40px;
+     border-top: 1px solid #B0B0B0;
+    .menu_footer {
+      list-style-type: none;
+      padding-left: 0;
+      @media(max-width: 767px){
+          margin-bottom: 40px;
+
+      }
+        li {
+          text-transform: uppercase;
+          margin: 12px 0;
+            &.active a {
+            color: $rojo;
+          }
+                &:first-child {
+                  margin-top: 0;
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+             a {
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                @include bold(12px, black);
+                &:hover {
+                  color: $rojo;
+                }
+                @media (max-width: 768px){
+                   font-size: 13px;
+                   
+              }
+             }
+        }
+    }
+
+    .bullets {
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        margin-bottom: 30px;
+         &:last-child {
+        margin-bottom: 0;
+      }
+        &.bullet {
+          .bullet-icon {
+            float: left;
+            min-height: 110px;
+            width: 45px;
+             @media (max-width: 768px){
+                     width: auto;
+                }
+
+              @media (max-width: 768px){
+                   min-height: 70px;
+              }
+              i{
+              color: red;
+              font-size: 50px;
+              @media (max-width: 768px){
+                   font-size: 30px;
+              }
+             }
+          }
+          .bullet-content {
+            padding-left: 60px;
+             @media (max-width: 768px){
+                     padding-left: 35px;
+                }
+             
+            h2 {
+                @include regular(18px, $rojo);
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                 @media (max-width: 1024px){
+                    font-size: 16px;
+                }
+                @media (max-width: 768px){
+                     font-size: 14px;
+                }
+            }
+            p{
+              @include bold(12px, black);
+              text-transform: uppercase;
+              line-height: 24px;
+              margin: 0;
+              
+              @media (max-width: 768px){
+                   @include bold(12px, black);
+                    line-height: 18px;
+              }
+                a{
+                  @extend %link_rojo;
+                }
+            }
+          }
+
+        } // bullet
+
+      }
+        
+    }
+    a {
+      &.btn_inversionistas {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 115px;
+          max-width:115px;
+          min-height: 80px;
+        @media(max-width: 767px){
+            position: relative;
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+      }
+    }
+
+
+
+} // footer
+
+.footer_bottom {
+  margin-top: 35px;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  border-top: 1px solid #B0B0B0;
+    .copy {
+        @include centerer(false, true);
+        @include regular(12px, black);
+        left: 0;
+        @media(max-width: 767px){
+          @include centerer(true, true);
+          width: 100%;
+          text-align: center;
+          
+        }
+    }
+
+    .trip_advisor {
+      @include centerer(false, true);
+      right: 0;
+      @media(max-width: 767px){
+          @include centerer(true, true);
+          right: auto;
+          top: 100px;
+      }
+        
+    }
+
+}
+
+/**/
+section.main_content section.entretencion .content_servicio .btn-mas{background-color: transparent; font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif; font-size: 12px; color: black; bottom: 100px; border-radius: 0; border: 1px solid black; text-align: center; padding: 10px 30px; text-transform: uppercase; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; letter-spacing: 3px; width:40%; margin: 20px 0 0 0 !important;}
+section.main_content section.entretencion .content_servicio .btn-mas:hover{ border: 1px solid transparent; background-color: #e40421; color: #fff!important;}
+section.main_content section.entretencion .content_servicio .btn-mas a{ color: #000!important; margin: 0px 0px!important;}
+section.main_content section.entretencion .content_servicio .btn-mas a:hover{ color: #fff!important;}
+@media (max-width: 768px){section.main_content section.entretencion .content_servicio .btn-mas{width:100%;} }
+@media (max-width: 375px){section.main_content section.entretencion .content_servicio .btn-mas{width:100%;} }
+
+.box-galery{ width: 100%; clear: both; text-align: center;}
+.box-galery .item-gal{ width:27%; height: auto; min-height: 100px; overflow: hidden; margin: 0.5% 0.5%; background-color:#EBE7E7; display: inline-block;}
+.box-galery .item-gal .img_servicios{ width: 100%; display: block;}
+.box-galery .item-gal .img_servicios img{ width: 100%;}
+@media (max-width: 768px){.box-galery .item-gal{ width:43%; margin: 1% 0.5%;} }
+@media (max-width: 375px){.box-galery .item-gal{ width:93%; margin: 2% 0.5%;} }
+/**/
+
+/**/
+section.main_content section.entretencion .content_servicio .owl-next, section.main_content section.entretencion .content_servicio .owl-prev { width: 20px; height: 60px; position: absolute; text-indent: -9999px; top: 50%; margin-top: -30px; cursor: pointer; opacity: 0.9; }
+section.main_content section.entretencion .content_servicio .owl-next:hover, section.main_content section.entretencion .content_servicio .owl-prev:hover { background-color: transparent; opacity: 0.5; }
+section.main_content section.entretencion .content_servicio .owl-next { background: url(../img/arrow_right2.png) no-repeat !important; right: 30px; }
+@media (max-width: 1024px) { section.main_content section.entretencion .content_servicio .owl-next { right: 30px; margin-top: -30px !important; } }
+@media (max-width: 768px) { section.main_content section.entretencion .content_servicio .owl-next { right: 10px; } }
+section.main_content section.entretencion .content_servicio .owl-prev { background: url(../img/arrow_left2.png) no-repeat !important; left: 30px; }
+@media (max-width: 1024px) { section.main_content section.entretencion .content_servicio .owl-prev { margin-top: -30px !important; } }
+@media (max-width: 768px) { section.main_content section.entretencion .content_servicio .owl-prev { left: 10px; } }
+/**/
+section.main_content section.entretencion .content_servicio .owl-dots { position: absolute; right: 30px; bottom: 30px; display: none;}
+
+
+
+
+/* agregados por Seo2 */
+
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; font-family: 'euphemia_ucasitalic', Helvetica, Arial, sans-serif;}
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #FF0024; }
+
+
+nav #navbar .container.menu_container .col-sm-12 .box_newsletter .form_neswsletter .box_input button[type=submit] i.fa-spinner {
+
+    color: white;
+    font-size: 40px;
+}
+
+
+/*----*/
+
+.logotravellersxs{ position: absolute; transform: translate(-50%, -50%); top: 50%; right: -10px; width: 40px;}

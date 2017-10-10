@@ -1,0 +1,94 @@
+
+section.search_home_xs{
+  margin-top: 30px;
+  background-color: $gris_claro;
+   transition: all 0.5s ease-in-out;
+
+    
+    &.clicked {
+      background-color: #bcbcbc;
+    }
+    
+      
+
+    .box_search_home {
+
+      min-height: 90px;
+
+      background-color: $gris_claro;
+         @media (max-width: 767px){
+            min-height: 60px;
+          }
+      form.search-bar {
+        ///////////////////////////////////////////////////////////////////////////////////
+        $base-spacing: 1.5em !default;
+        $base-border-color: gainsboro !default;
+        $base-line-height: 1.5em !default;
+        //////////////////////////////////////////////////////////////////////////////////
+
+        $search-bar-border-color: $base-border-color;
+        $search-bar-border: 1px solid $search-bar-border-color;
+        $search-bar-background: lighten($search-bar-border-color, 10%);
+      
+        position: relative;
+      
+        input[type=search] {
+       
+          @include italic(20px, white);
+          text-align: center;
+
+          @media (max-width: 768px){
+               font-size: 23px;
+               text-align: center;
+          }
+          @media (max-width: 600px){
+               font-size: 12px;
+               text-align: left;
+          }
+          appearance: none;
+          background-color: $gris_claro;
+          border: none;
+          box-sizing: border-box;
+          display: block;
+          padding: ($base-spacing / 3) ($base-spacing / 3);
+          position: relative;
+          border-radius: 0;
+          width: 100%;
+          height: 90px;
+          transition: all 0.5s ease-in-out;
+          @media (max-width: 767px){
+             height: 60px;
+          }
+
+          &.clicked {
+               background-color: #bcbcbc;
+             }
+        }
+
+        button[type=submit] {
+          @include position(absolute, 0 0 0 null);
+          outline: none;
+          padding: 5px 10px;
+          width: 90px;
+          height: 90px;
+          @media (max-width: 767px){
+              width: 60px;
+              height: 60px;
+          }
+          background-color: $rojo_btn_search;
+              i{
+                &.fa-search {
+                  font-size: 35px;
+                  color: white;
+                }
+              }
+        }
+      }
+      
+
+    }
+ 
+  
+}
+
+

@@ -1,0 +1,77 @@
+section.contacto_comercial {
+        padding-bottom: 15px;
+        position: relative;
+      
+      
+       
+            a{
+            
+
+              &.back{
+                  text-decoration: none;
+                  @include clarendon(14px, $rojo);
+                  text-transform: uppercase;
+                  letter-spacing: 4px;
+                  display: inline-block;
+                  transition: all .5s ease;
+                  position: absolute;
+                  right: 15px;
+                  top: 0;
+                  &:hover {
+                      color: $rojo;
+                  }
+                  @media(max-width: 767px){
+                        top:40px;
+                        bottom: 0;
+                        font-size: 16px;
+                    }
+              }
+            }
+            .termino{
+              margin-bottom: 0;
+              .title {
+                margin-bottom: 0;
+                h3{
+                  @include clarendon(20px, #303030);
+                  text-transform: uppercase;
+                  margin-bottom: 10px;
+                  letter-spacing: 4px;
+                }
+                .underline{
+                  width: 40px;
+                  height: 2px;
+                  border-top: 1px solid black;
+
+                }
+              }
+              p{
+                @include regular(14px, black);
+                line-height: 22px;
+                margin: 15px 0;
+              }
+
+            } // termino
+            .content{
+                  h3.uppercase_bold{
+                        margin: 30px 0;
+                  }
+                  p{
+                      @include regular(14px, black);
+                      line-height: 22px;
+                      margin: 20px 0;
+                  }
+                  ul{
+                    margin: 0;
+                    padding-left:15px;
+                    li{
+                        @include regular(14px, black);
+                        margin-bottom: 8px;
+                    }
+                  }
+                  @media(max-width: 768px){
+                      margin-bottom: 30px;
+                  }
+            }
+
+} // terminos 
+

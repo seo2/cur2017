@@ -1,0 +1,1181 @@
+section.sobre_distrito{
+       // min-height: 500px;
+        position: relative;
+       // margin-bottom: 50px;
+      //   h4 {
+      //     @include clarendon(20px, black);
+      //       text-transform: uppercase;
+      //       letter-spacing: 5px;
+      //      @media(max-width: 768px){
+      //          font-size: 18px;
+      //     }
+      //      @media(max-width: 375px){
+      //          font-size: 16px;
+      //     }
+      //   }
+      //       .divider{
+      //         color:black;
+      //         margin:0 0 40px 15px;
+      //         overflow:hidden;
+      //         text-align:left;   
+           
+      //     }
+
+      //       .divider:before{
+      //           content:"";
+      //           vertical-align:middle;
+      //           display:inline-block;
+      //           width:60px;
+      //           border-bottom:1px solid black;
+      //           margin-top: -6px;
+      //            margin-right: 10px;
+          
+      //       }
+      //             a{
+      
+
+      //   &.back{
+      //       text-decoration: none;
+      //       @include clarendon(14px, $rojo);
+      //       text-transform: uppercase;
+      //       letter-spacing: 4px;
+      //       display: inline-block;
+      //       transition: all .5s ease;
+      //       position: absolute;
+      //       right: 15px;
+      //       top: 0;
+      //       &:hover {
+      //           color: $rojo;
+      //       }
+      //       @media(max-width: 767px){
+      //             top:50px;
+      //             bottom: 0;
+      //             font-size: 16px;
+      //         }
+      //   }
+      // }
+
+            .box_content{
+              background-color: black;
+              background-size: cover !important;
+              background-position: center right !important;
+              background-repeat: no-repeat !important;
+              min-height: 500px;
+              position: relative;
+              padding:30px;
+              @media(max-width: 991px){
+                min-height: 690px;
+                padding: 0;
+              }
+
+              .content_about{
+                @include centerer(false, true);
+                width: 100%;
+
+                p{ 
+                  @include clarendon(14px, white);
+                  margin: 40px 0 20px 0;
+                  @media(max-width: 768px){
+                    margin: 20px 0;
+                  }
+                }
+                    a{
+                       display: inline-block;
+                       margin-top: 20px;
+
+                       &.btn_blanco {
+                          //  background-color: transparent;
+                          //  @include bold(15px, black);
+                          //  bottom: 100px;
+                          //  border-radius: 0;
+                          //  border: 1px solid black;
+                          //  text-align: center;
+                          //  padding: 10px 30px;
+                          //  text-transform: uppercase;
+                          // // width: 160px;
+                          //  height: 43px;
+                          //  transition:all 0.2s ease-in-out;
+                          //  letter-spacing: 3px;
+                             //   &:hover {
+                             //   border: 1px solid transparent;
+                             //   background-color: $rojo;
+                             //   color: white;
+                             
+                             // }
+                            //  @media(max-width: 768px){
+                            //     padding: 14px 20px;
+                            //     font-size: 11px;
+                            // }
+
+                            @extend %btn_blanco;
+                            @media(max-width: 768px){
+                                padding: 14px 20px;
+                                font-size: 11px;
+                            }
+                       }
+                    }
+                        // foto oscura
+                       &.texto_blanco {
+                         h3, h4, p,
+                         .divider,
+                         .divider:before,
+                         .divider:after{ 
+                           color: white;
+                         }
+                          .divider:before,
+                         .divider:after{ 
+                           border-bottom:1px solid white;
+                         }
+                         a.btn_blanco {
+                                 border-color: white;
+                                 color: white;
+                                 &:hover {
+                                 border: 1px solid transparent;
+                                 background-color: $rojo;
+                                 color: white;
+                                  //padding: 10px 30px;
+                               }
+                         }
+                       }
+
+
+
+              }
+            }
+           
+} // about distrito
+
+section.distrito_de_lujo{
+    position: relative;
+        h4 {
+          @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+        }
+            .divider{
+              color:black;
+              margin:30px 0 30px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+                 margin-right: 10px;
+          
+            }
+            a{
+              &.ver{
+                text-decoration: none;
+                @include clarendon(12px, black);
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: inline-block;
+                transition: all .5s ease;
+                position: absolute;
+                right: 15px;
+                top: -4px;
+                @media(max-width:768px){
+                    top: 40px;
+                    font-size: 10px;
+                  }
+                   @media(min-width:768px){
+                     &:hover{
+                        color: $rojo;
+                    } 
+                  }
+                    i{
+                      &.fa-map-marker{
+                        color: black;
+                        font-size:26px;
+                      }
+                    }          
+              }
+
+            }
+  
+            .slider_tiendas_dl {
+                 position: relative;
+                 margin-bottom: 40px;
+
+               .item {
+                  position: relative;
+                     .caption {
+
+                       @include centerer(true, true);
+                       // text-align: left;
+
+                              @media(max-width: 991px){
+                                @include centerer(true, true);
+                                text-align: center;
+                                 width:90%;
+                              }
+
+                               @media(max-width: 768px){
+                                 @include centerer(true, true);
+                                 text-align: center;
+                                  width:50%;
+                               }
+                                @media(max-width: 767px){
+                                 @include centerer(true, true);
+                                 text-align: center;
+                                  width:90%;
+                               }
+
+                        .logo_tienda_dl{
+                          margin-bottom: 70px;
+                            @media(max-width: 767px){
+                                  // margin-bottom:0px; 
+                               }
+
+                        }
+                 
+                           a{
+                             display: inline-block;
+                             margin-top: 20px;
+                             &.btn_blanco {
+                                @extend %btn_blanco;
+                             }
+                             margin-top: 0;
+                       }
+                        // foto oscura
+                       &.texto_blanco {
+                         h3, h4, p,
+                         .divider,
+                         .divider:before,
+                         .divider:after{ 
+                           color: white;
+                         }
+                          .divider:before,
+                         .divider:after{ 
+                           border-bottom:1px solid white;
+                         }
+                         a.btn_blanco {
+                                 border-color: white;
+                                 color: white;
+                                 &:hover {
+                                 border: 1px solid transparent;
+                                 background-color: $rojo;
+                                 color: white;
+                                  //padding: 10px 30px;
+                               }
+                         }
+                       }
+                     }// caption
+                   
+                     .img_slide {
+                         background-size: cover !important;
+                         background-position: center top !important;
+                         //height: 100% !important;
+                        // display: block !important;
+                         background-repeat: no-repeat !important;
+                         height: 380px !important;
+                         @media (max-width:767px){
+                             height: 400px !important;
+                         }
+                     }
+        
+                 a{
+                   display: inline-block;
+                   margin-top: 20px;
+                   text-align: center;
+                             &.texto_negro {
+                                 color: black;
+                                 border: 1px solid black;
+                             
+                             }
+
+                 }
+               } // item
+
+               .owl-nav{
+                 &.disabled {
+                   display: none;
+                 }
+               }
+
+               .owl-dots {
+                 position: absolute;
+                 @include centerer(true, false);
+                 bottom: 10px;
+                 .owl-dot {
+                       span {
+                           border: 2px solid white;
+                           background: transparent;
+                           border-radius: 50px;
+                           height: 15px;
+                           width: 15px;
+                           cursor: pointer;
+                           @media(max-width: 767px){
+                               margin-left: 5px;
+                               margin-right: 5px;
+                           }
+                         }
+                   }
+                   .owl-dot.active {
+                       span {
+                         background-color: $rojo;
+                       }
+                   }
+
+                 } // dots
+
+                 .owl-next, .owl-prev {
+                        width:20px;
+                        height: 60px;
+                        position: absolute;
+                        text-indent: -9999px;
+                        top: 50%;
+                        margin-top: -30px;
+                        cursor:pointer;
+                         opacity: 0.9;
+                       // @include transition(all 0.2s ease-in-out);
+                           &:hover {
+                            background-color: transparent;
+                            opacity: 0.5;
+                          }
+                 }
+
+                  .owl-next {
+                      background: url(../img/arrow_right2.png) no-repeat !important;
+                      right: 30px;
+                          @media (max-width:1024px){
+                            right: 30px;
+                            margin-top: -30px !important;
+                        }
+                         @media (max-width:768px){
+                            right: 10px;
+                        }
+                  }
+                  .owl-prev {
+                      background: url(../img/arrow_left2.png) no-repeat !important;
+                      left: 30px;
+                      @media (max-width:1024px){
+                          margin-top: -30px !important;
+                      }
+                        @media (max-width:768px){
+                            left: 10px;
+                        }
+                  }
+               }
+
+
+}
+
+section.tiendas_distrito{
+    padding-bottom: 40px;
+    position: relative;
+      h4 {
+          @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+        }
+            .divider{
+              color:black;
+              margin:0 0 90px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+                 margin-right: 10px;
+          
+            }
+    a{
+      &.ver{
+                text-decoration: none;
+                @include clarendon(12px, black);
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: inline-block;
+                transition: all .5s ease;
+                position: absolute;
+                right: 15px;
+                top: 56px;
+
+             
+                @media(max-width:768px){
+                    top: 80px;
+                    font-size: 10px;
+                  }
+                   @media(min-width:768px){
+                     &:hover{
+                        color: $rojo;
+                    } 
+                  }
+  
+                    i{
+                      &.fa-map-marker{
+                        color: black;
+                        font-size: 26px;
+                      }
+                    }          
+              }
+              &.back{
+                text-decoration: none;
+                font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: $rojo;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: inline-block;
+                transition: all .5s ease;
+                position: absolute;
+                top: 0px;
+                right: 15px;
+
+                    @media(max-width:767px){
+                      top: 50px;
+                    }
+                             
+                     &:hover{
+                        color: $rojo;
+                    } 
+              }
+    }
+  .box_tienda {
+    border: 1px solid $gris_borde;
+    text-align: center;
+    min-height: 220px;
+      @media(max-width:991px){
+          min-height: 320px;
+         
+      }
+      a {
+          display:block;
+          transition:all 0.5s ease-in-out;
+          min-height: 220px;
+          background-color: #fff;
+          position: relative;
+            @media(max-width:991px){
+              min-height: 320px;
+          }
+    
+              img {
+             
+                  max-width: 150px;
+                  max-height: 150px;
+                  display: block;
+                  opacity: 1;
+                  transition:all 0.2s ease-in-out;
+
+                &.logo_tienda{
+                    @include centerer(true, true);
+                }
+
+              
+              }
+                p{
+                  @include clarendon(20px, black);
+                  text-align: center;
+                  margin-bottom: 25px;
+                  margin: 0;
+                  padding: 0 20px;
+                 // line-height: 24px;
+                  @media(max-width:991px){
+                      font-size: 14px;
+                      line-height: 26px;
+                      margin: 0;
+                      padding: 0;
+                  }
+
+                }
+
+          &:hover {
+             background-color: black;
+            img{
+                &.logo_tienda{
+                  opacity: 0;
+                }
+                &.logo_tienda.hover{
+                    opacity: 1
+                }
+           
+              
+            }
+          }
+
+
+
+      }               
+        
+  }
+  .box_nombre_tienda{
+          border-left: 1px solid $gris_borde;
+          border-right: 1px solid $gris_borde;
+          border-bottom: 1px solid $gris_borde;
+          padding: 14px;
+          margin-bottom: 30px;
+          @include clarendon(12px, black);
+          text-transform: uppercase;
+          text-align: center;
+
+          // a{
+          //   @include bold(12px, black);
+          //   text-transform: uppercase;
+          //   text-align: center;
+          //   display:block;
+          //   cursor: pointer;
+          //   margin: 0;
+          //      @media(max-width:991px){
+          //         font-size: 10px;
+          //       padding: 0;
+          //     }
+          // }
+        }
+        .box_ver_mas_tiendas {
+        
+          a{
+            display: inline-block;
+            transition: all .5s ease;
+            h3{
+
+              &.ver_mas{
+                  @include clarendon(12px, black);
+                  text-transform: uppercase;
+                  margin-bottom: 10px;
+              }
+
+            }
+
+              &.btn_ver_mas{
+                background-color: transparent;
+                border: none;
+                  img{
+                    &.arrow_down{
+
+                    }
+                  }
+              }
+              &:hover{
+                opacity: 0.7;
+              }
+          }
+        } //boton  ver mas tiendas
+          
+      .caja_tienda_single{
+        background-color: #000;
+        padding: 30px;
+        margin-bottom: 40px;
+        background-color: #fbfbfb;
+             @media(max-width: 768px){
+              padding-bottom: 30px;
+            }
+         img{
+              &.logo {
+                margin-bottom: 40px;
+              
+          
+              }
+
+            }
+        
+          .desc_tienda {
+            .datos_tienda {
+              p{
+                    @include clarendon(14px, black);     
+              }
+                  img{
+              &.logo {
+                margin-bottom: 40px;
+
+              }
+
+              }
+            }
+            h3{
+              @include clarendon(20px, black);
+              text-transform: uppercase;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              line-height: 25px;
+            }
+            
+            p{
+               //@include clarendon(12px, black);     
+               @include regular(14px, black);     
+            }
+            a{
+              color: $rojo;
+              &:hover{
+                color: $negro;
+              }
+            }
+            
+          }
+          .slider_single_tiendas_dl {
+                 position: relative;
+                 margin-bottom: 40px;
+                   max-width: 370px;
+               .item {
+                  position: relative;
+                     .caption {
+                       @include centerer(true, true);
+                       // text-align: left;
+                               @media(max-width: 991px){
+                                 @include centerer(true, true);
+                                 text-align: center;
+                                 width: 90%;
+                               }
+
+                        .logo_tienda_dl{
+                          margin-bottom: 70px;
+                        }
+                      
+                             // h3 {
+                             //   @include clarendon(50px, black);
+                             //   text-transform: uppercase;
+                             //    @media(max-width: 768px){
+                             //        font-size: 40px;
+                             //   }
+                             //    @media(max-width: 375px){
+                             //        font-size: 35px;
+                             //   }
+                             // }
+                             // h4 {
+                             //   @include clarendon(30px, black);
+                             //   text-transform: uppercase;
+                             //   letter-spacing: 5px;
+                             //    @media(max-width: 768px){
+                             //        font-size: 24px;
+                             //   }
+                             //    @media(max-width: 375px){
+                             //        font-size: 18px;
+                             //   }
+                             // }
+                             // p{
+                             //    @include clarendon(14px, black);
+                             //     @media(max-width: 768px){
+                             //         font-size: 16px;
+                             //    }
+                             //     @media(max-width: 375px){
+                             //         font-size: 16px;
+                             //    }
+                             // }
+                             // .divider{
+                             //       color:black;
+                             //       max-width:500px;
+                             //       margin:10px auto 20px auto;
+                             //       overflow:hidden;
+                             //       text-align:left;   
+                             //       line-height:1.2em;
+                             //          @media(max-width: 768px){
+                             //               max-width:400px;
+                             //         }
+                             //   }
+
+                                 // .divider:before,
+                                 // .divider:after{
+                                 //     content:"";
+                                 //     vertical-align:middle;
+                                 //     display:inline-block;
+                                 //     width:60px;
+                                 //     border-bottom:1px solid black;
+                                 //     margin-top: -6px;
+                                 //    // margin:0 2% 6px -55%;
+                                 // }
+                                 // .divider:before{
+                                 //   margin-right: 10px;
+                                 // }
+                                 // .divider:after{
+                                 //   margin-left: 10px;
+                                 // }
+                           a{
+                             display: inline-block;
+                             margin-top: 20px;
+                             &.btn_blanco {
+                                 background-color: transparent;
+                                 @include bold(15px, black);
+                                 bottom: 100px;
+                                 border-radius: 0;
+                                 border: 1px solid black;
+                                 text-align: center;
+                                 padding: 10px 30px;
+                                 text-transform: uppercase;
+                                // width: 160px;
+                                 height: 43px;
+                                 transition:all 0.2s ease-in-out;
+                                 letter-spacing: 3px;
+                                     &:hover {
+                                     border: 1px solid transparent;
+                                     background-color: $rojo;
+                                     color: white;
+                                   
+                                   }
+                             }
+                       }
+                        // foto oscura
+                       &.texto_blanco {
+                         h3, h4, p,
+                         .divider,
+                         .divider:before,
+                         .divider:after{ 
+                           color: white;
+                         }
+                          .divider:before,
+                         .divider:after{ 
+                           border-bottom:1px solid white;
+                         }
+                         a.btn_blanco {
+                                 border-color: white;
+                                 color: white;
+                                 &:hover {
+                                 border: 1px solid transparent;
+                                 background-color: $rojo;
+                                 color: white;
+                                  //padding: 10px 30px;
+                               }
+                         }
+                       }
+                     }// caption
+                   
+                     .img_slide {
+                         background-size: cover !important;
+                         background-position: center top !important;
+                         background-repeat: no-repeat !important;
+                         height: 520px !important;
+                         @media (max-width:767px){
+                             height: 400px !important;
+                         }
+                     }
+                 // .owl-video-wrapper {
+                       
+                 //           min-height: 520px;
+                 //           overflow: hidden;
+                 //           @media (max-width: 767px){
+                 //               min-height: 400px;
+                 //           }
+                 //   a{
+                 //       position: relative;
+                 //       &.item-video {
+
+
+                 //       }
+                     
+                 //   }
+                 //   .owl-video{
+                 //     display: block;
+                 //       }
+                 //       .owl-video-play-icon {
+                 //           transition: transform .1s ease;
+                 //         &:hover {
+                 //           transform: scale(1.3, 1.3);
+                 //         }
+                 //       }
+                 //       .owl-video-tn {
+                   
+                 //         min-height: 520px;
+                        
+                 //           @media (max-width: 767px){
+                 //               min-height: 400px;
+                 //           }
+                 //       }
+                 // }
+                 a{
+                   display: inline-block;
+                   margin-top: 20px;
+                   text-align: center;
+                   // &.btn_single_img {
+                   //   background-color: transparent;
+                   //   @include bold(15px, white);
+                   //   @include centerer(true, false);
+                   //   bottom: 60px;
+                   //   border-radius: 0;
+                   //   padding: 10px 30px;
+                   //   height: 43px;
+                   //   letter-spacing: 3px;
+                   //   border: 1px solid white;
+                   //   text-transform: uppercase;
+                   //   transition:all 0.2s ease-in-out;
+                   //         &:hover {
+                   //           border: 1px solid transparent;
+                   //           background-color: $rojo;
+                   //           color: white;
+                   //           //padding: 10px 30px;
+
+                   //     }
+                   // }
+                   
+                      // hover foto oscura
+                             &.texto_negro {
+                                 color: black;
+                                 border: 1px solid black;
+                             }
+                 }
+               } // item
+
+               .owl-nav{
+                 &.disabled {
+                   display: none;
+                 }
+               }
+
+               .owl-dots {
+                 position: absolute;
+                 @include centerer(true, false);
+                 bottom: 10px;
+                 .owl-dot {
+                       span {
+                           border: 2px solid white;
+                           background: transparent;
+                           border-radius: 50px;
+                           height: 15px;
+                           width: 15px;
+                           cursor: pointer;
+                           @media(max-width: 767px){
+                               margin-left: 5px;
+                               margin-right: 5px;
+                           }
+                         }
+                   }
+                   .owl-dot.active {
+                       span {
+                         background-color: $rojo;
+                       }
+                   }
+
+                 } // dots
+
+                 .owl-next, .owl-prev {
+                        width:20px;
+                        height: 60px;
+                        position: absolute;
+                        text-indent: -9999px;
+                        top: 50%;
+                        margin-top: -30px;
+                        cursor:pointer;
+                       // @include transition(all 0.2s ease-in-out);
+                           &:hover {
+                            background-color: transparent;
+                            opacity: 0.5;
+                          }
+                 }
+
+                  .owl-next {
+                      background: url(../img/arrow_right.png) no-repeat !important;
+                      right: -40px;
+                          @media (max-width:1024px){
+                            margin-top: -30px !important;
+                        }
+                         @media (max-width:768px){
+                            right: -30px;
+                        }
+                  }
+                  .owl-prev {
+                      background: url(../img/arrow_left.png) no-repeat !important;
+                      left: -40px;
+                      @media (max-width:1024px){
+                          margin-top: -30px !important;
+                      }
+                        @media (max-width:768px){
+                            left: -30px;
+                        }
+                  }
+               }
+
+
+      }
+
+} // tiendas distrito
+
+section.footer_distrito_de_lujo {
+   h4 {
+          @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+        }
+            .divider{
+              color:black;
+              margin:0 0 40px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+                 margin-right: 10px;
+          
+            }
+.image_dynamic {
+  position: relative;
+  .box_title{
+      width: 100%;
+      min-height: 320px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      .caption_title{
+          @include centerer(true, true);
+            h3{
+          
+               @include clarendon(50px, white);
+               line-height: 57px;
+                text-align: center;
+                text-transform: uppercase;
+                @media (max-width:768px){
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+            }
+            .divider{
+               width: 70px;
+               height: 2px;
+               border-top:1px solid white; 
+              text-align: center;
+              margin: 30px auto 0 auto;
+            }
+      }
+    }
+  .box_caption{
+    width: 100%;
+    min-height: 290px;
+    display: block;
+    background-color: rgba(0,0,0,0.61);
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    .caption_revista {
+       @include centerer(true, true);
+        text-align: center;
+        width: 430px;
+            @media(max-width: 1199px){
+             width: 409px;
+          
+           }
+             @media(max-width: 1198px){
+               width: 100%;
+            }
+            h3{
+               @include clarendon(30px, white);
+               text-transform: uppercase;
+               letter-spacing: 4px;
+               @media(max-width: 991px){
+                  font-size: 24px;
+               }
+            }
+        p {
+          @include clarendon(16px, white);
+         text-align: center;
+          width: 80%;
+          padding: 0;
+          margin: 20px auto 30px auto;
+          @media(max-width: 1199px){
+             width: 90%;
+          }
+           @media(max-width: 991px){
+              //margin: 20px auto 30px auto;
+              font-size: 14px;
+          }
+        }
+          a{
+            &.btn_revista {
+              background-color: transparent;
+              border: 1px solid white;
+              @include bold(12px, white);
+              border-radius: 0;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              width:80%;
+              display: inline-block;
+              margin-top: 0;
+              padding: 8px 0;
+            }
+          }
+    }
+  }
+}
+
+    .box {
+        margin-bottom: 30px;
+        position: relative;
+        min-height: 290px;
+        overflow: hidden;
+        @media (max-width:767px){
+            min-height: 300px !important;
+        }
+          .box_img {
+                background-size: cover !important;
+                background-position: left center !important;
+                display: block !important;
+                background-repeat: no-repeat !important;
+                min-height: 290px !important;
+                @media (max-width:767px){
+                    min-height: 300px !important;
+                }
+              }
+
+      a {
+        display: block;
+
+        &.box_enlace {
+           display: block;
+
+          .caption {
+            @include centerer(false, true);
+              text-align: left;
+              width: 100%;
+              background-color: rgba(0, 0, 0, 0.2);
+              padding: 30px 0 30px 20px;
+              transition: all .5s ease;
+              opacity: 1;
+            @media(max-width: 768px){
+              @include centerer(true, true);
+              margin-left: auto;
+              padding:30px 30px 20px 20px;
+            }
+
+
+            h3 {
+              @include clarendon(18px, white);
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              margin: 0;
+               @media(max-width: 991px){
+                   font-size:15px;
+              }
+              //  @media(max-width: 375px){
+              //      font-size: 25px;
+              // }
+            }
+
+
+            p{
+              @include clarendon(34px, white);
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              margin: 0;
+              line-height: 39px;
+               @media(max-width: 991px){
+                   font-size: 24px;
+                   line-height: 31px;
+              }
+              //  @media(max-width: 375px){
+              //      font-size: 20px;
+              // }
+            }
+
+
+            img{
+              margin-top: 15px;
+            }
+
+            .divider{
+          
+                  overflow:hidden;
+                  text-align:center;   
+                  line-height:1.2em;
+              }
+
+              .divider:before{
+                  content:"";
+                  vertical-align:middle;
+                  display:inline-block;
+                  width:50%;
+                  border-bottom:1px solid white;
+                  margin:0 2% 0 -55%;
+              }
+
+           
+
+          }// caption
+
+            transition: all .5s ease;
+            &:hover {
+              transform: scale(1.05);
+              @media (max-width: 1024px){
+                transform: none;
+              }
+              .caption {
+                  opacity: 0;
+                   @media (max-width: 1024px){
+                     opacity: 1;
+                  }
+              }
+          }
+        }
+      }
+    } // box
+
+
+}
+
+            #mapaDistrito{
+              .modal-dialog{
+                width: 80%;
+                @media (max-width:768px){
+                     width: 90%;
+                  }
+
+                   .modal-content{
+                      background-color: #171717;
+                  .modal-header{
+                    border-bottom: none;
+                    .close{
+                      color: white;
+                      font-size: 34px;
+                      opacity: 1;
+                      margin-top: -14px;
+
+                    }
+                          h4{
+                            font-size: 14px;
+                            color: white;
+                           // text-align: center;
+
+                          }
+
+
+                  }
+
+                  .modal-body{
+
+                  }
+
+                  .modal-footer{
+                        border-top: none;
+
+                  }
+
+                }
+              }
+           
+            }   

@@ -1,0 +1,90 @@
+html {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#map-canvas {
+    width: 80%;
+    height: 650px;
+    float: right !important;
+
+}
+
+
+#geocomplete{
+    
+    width: 100% !important;
+    margin: 0% 0% 0%;
+
+}
+
+.logotipo{
+
+    background: url("../../public/img/logo-bom.png");
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 0 auto;
+
+}
+
+
+
+#geocomplete{
+
+ 
+}
+
+#find {
+    margin: 0% 0% 0%;
+
+}
+
+#panel {
+
+    position: relative;
+    opacity: 0.;
+    top: 0px;
+    float: left;
+    z-index: 5;
+    height:100%;
+    padding: 5px;
+    border: 1px solid #999;
+    width: 20% !important;
+    height: 650px;
+    background: #3b3d56; /* Old browsers */
+    background: -moz-linear-gradient(top, #3b3d56 0%, #0c0e16 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b3d56), color-stop(100%, #0c0e16)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3b3d56 0%, #0c0e16 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3b3d56 0%, #0c0e16 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3b3d56 0%, #0c0e16 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #3b3d56 0%, #0c0e16 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b3d56', endColorstr='#0c0e16', GradientType=0); /* IE6-9 */
+
+    -webkit-box-shadow: 10px 0px 17px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    10px 0px 17px 0px rgba(50, 50, 50, 1);
+     box-shadow:        10px 0px 17px 0px rgba(50, 50, 50, 1);
+}
+
+#menuppal, .cat-item {
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.submenu a {
+  font-size: 12px !important;
+  font-family: 'PT Sans',sans-serif, Arial, Helvetica, sans-serif !important;
+}
+
+ol, ul {
+  margin-bottom: 0 !important;
+}
+

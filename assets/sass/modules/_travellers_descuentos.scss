@@ -1,0 +1,221 @@
+section.travelers_descuentos, section.piso_diseno_descuentos {
+  h4 {
+    @include clarendon(20px, black);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+     @media(max-width: 768px){
+         font-size: 18px;
+    }
+     @media(max-width: 375px){
+         font-size: 16px;
+    }
+  }
+      .divider{
+        color:black;
+        margin:0 0 30px 15px;
+        overflow:hidden;
+        text-align:left;   
+     
+    }
+
+      .divider:before{
+          content:"";
+          vertical-align:middle;
+          display:inline-block;
+          width:60px;
+          border-bottom:1px solid black;
+          margin-top: -6px;
+    
+      }
+      .divider:before{
+        margin-right: 10px;
+      }
+
+      #filtro_descuento {
+          margin-bottom: 30px;
+          div#text {
+              @include bold(13px, black);
+              text-transform: uppercase;
+              letter-spacing: 4px;
+              display: inline-block;
+          }
+        span{
+          &.filter-option{
+             @include bold(13px, $gris);
+             text-transform: uppercase;
+             transition: all .3s ease;
+             &:hover{
+              color: black;
+             }
+          }
+          &.caret {
+            color: black;
+          }
+        }
+
+        .btn-default{
+          border-color: black;
+          border-radius: 0;
+          padding-top: 8px;
+          &:hover, &:focus {
+            background-color:white;
+          }
+        }
+          .dropdown-menu{
+            ul {
+
+              li{
+                
+                a{
+                 @include bold(11px, black);
+                 text-transform: uppercase;
+                }
+              }
+            }
+          }
+      }
+      
+      .grid_descuentos{
+        padding-bottom: 50px;
+            .box_descuento{
+              display: block;
+              overflow: hidden; 
+              margin-bottom: 30px;
+          
+                .item_descuento {
+                  a {
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    color: white;
+                   .box_dcto {
+                      @include centerer(true, true);
+                        background-color: rgba(0,0,0,0.5);
+                        width: 80%;
+                        height: 80%;
+                        padding: 20px;
+                        opacity: 1;
+                        transition: all .5s ease;
+                        z-index: 100;
+
+                       .datos_dcto{
+                        @include centerer(true, true);
+                        width: 62%;
+                     
+                        @media(max-width: 1024px){
+                          width: 65%;
+                        }
+                         @media(max-width: 991px){
+                          width: 150px;
+                        }
+                           @include centerer(true, true);
+                          .num{
+                            @include bold(60px,white);
+                            line-height: 1;
+                          //  float: left;
+                            letter-spacing: -4px;
+                              @media(max-width: 1024px){
+                              font-size: 60px;
+                             }
+                               @media(max-width: 1023px){
+                              font-size: 90px;
+                             }
+                          }
+
+                          .box_percent{
+                            float:right;
+                            .text_percent{
+                                @include bold(50px,white);
+                                line-height: 1;
+                                 @media(max-width: 1024px){
+                                  font-size: 40px;
+
+                                }
+                            }
+                            .text_dcto{
+                                @include bold(20px,white);
+                                text-transform: uppercase;
+                                 @media(max-width:1024px){
+                                  font-size: 14px;
+                                }
+                            }
+                          }
+                          p{
+                             @include bold(10px,white);
+                             margin-top: 10px;
+                           }
+                       }
+
+                    }
+                    img {
+                       transition: all .5s ease;
+                       opacity: 1;
+                    }
+                    
+                      &:hover  {
+                        .box_dcto{
+                          background-color: rgba(0,0,0,0.8);
+                        }
+                            
+                            img{
+                              opacity: 0.9;
+                              transform: scale(1.05);
+                          }
+                        
+                      }
+                  }
+                    
+                    .box_logo_tienda {
+                        border: 1px solid black;
+                        min-height: 60px;
+                        position: relative;
+                        overflow: hidden;
+                        .logo_tienda {
+                          @include centerer(true, true);
+                          background-size: cover !important;
+                          background-position: center center !important;
+                          background-repeat: no-repeat !important;
+                          width: 70px;
+                            // @media(max-width: 1024px){
+                            //    padding: 10px;
+                            // }
+                        }
+                    }
+
+
+
+                } // item descuento
+            }// box descuento
+      }
+      .box_ver_mas_descuentos {
+    
+        a{
+          display: inline-block;
+          transition: all .5s ease;
+          h3{
+
+            &.ver_mas{
+                @include clarendon(12px, black);
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+          }
+
+            &.btn_ver_mas{
+              background-color: transparent;
+              border: none;
+                img{
+                  &.arrow_down{
+
+                  }
+                }
+            }
+            &:hover{
+              opacity: 0.7;
+            }
+        }
+      }
+
+
+}

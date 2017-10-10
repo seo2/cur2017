@@ -1,0 +1,703 @@
+section.novedades {
+        position: relative;
+        h4 {
+          @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+        }
+            .divider{
+              color:black;
+              margin:0 0 40px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+          
+            }
+            .divider:before{
+              margin-right: 10px;
+            }
+
+            a{
+            
+
+              &.back{
+                  text-decoration: none;
+                  @include clarendon(14px, $rojo);
+                  text-transform: uppercase;
+                  letter-spacing: 4px;
+                  display: inline-block;
+                  transition: all .5s ease;
+                  position: absolute;
+                  right: 15px;
+                  top: 0;
+                  &:hover {
+                      color: $rojo;
+                  }
+                  @media(max-width: 767px){
+                        top:40px;
+                        bottom: 0;
+                        font-size: 16px;
+                    }
+              }
+            }
+
+
+            
+            .grid_tiendas {
+              padding-bottom: 50px;
+                  .item_tienda {
+                    display: block;
+                    overflow: hidden; 
+                    margin-bottom: 30px;
+                
+                      .tienda {
+                        a {
+                          display: block;
+                          position: relative;
+                          overflow: hidden;
+                       
+                          // para nombre de tienda con hover
+                            h4{
+
+                              &.nombre_tienda{
+                                 color: white;
+                                 font-size: 16px;
+                                  @include centerer(true, true);
+                                  opacity: 0;
+                                  transition: all .5s ease;
+                                  z-index: 2;
+                              }
+                            }
+                            .borde {
+                               @include centerer(true, true);
+                               width: 100%;
+                              height: 100%;
+                              border: 1px solid white;
+                              opacity: 0;
+                              transition: all .5s ease;
+                             // background-color: tomato;
+                              z-index: 1;
+                            }
+                            span{
+                                transition: all .5s ease;
+                                opacity: 0;
+                              &.bg_nombre_tienda{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background-color: black;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+
+                              }
+                             
+                            }
+                          .overlay_img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: 10;
+                            width: 100%;
+                            height: 100%;
+                            transition: all .5s ease;
+                          }
+                          img {
+                             transition: all .5s ease;
+                             opacity: 1;
+                          }
+                            &:hover  {
+                                img{
+                                    opacity:0.6;
+                                    transform: scale(1.05);
+                                }
+                                .borde{
+                                  opacity: 1;
+                                  width: 90%;
+                                  height: 90%;
+                                }
+                                span.bg_nombre_tienda{
+                                  opacity: 1;
+                                }
+                                h4.nombre_tienda{
+                                  opacity: 1;
+                                }
+                              
+                            }
+                        }
+                          
+                          .box_logo_tienda {
+                              border: 1px solid black;
+                              min-height: 60px;
+                              position: relative;
+                              overflow: hidden;
+                              .logo_tienda {
+                                @include centerer(true, true);
+                                background-size: cover !important;
+                                background-position: center center !important;
+                                background-repeat: no-repeat !important;
+                                width: 70px;
+                                  // @media(max-width: 1024px){
+                                  //    padding: 10px;
+                                  // }
+                              }
+                          }
+                          .box_logo_destacado{
+                              @extend .box_logo_tienda;
+                              @media (max-width:768px){
+                                    padding-bottom: 30px;
+                              }
+                             
+                              .logo_destacado{
+                                @include centerer(true, true);
+                                 background-size: cover !important;
+                                background-position: center center !important;
+                                background-repeat: no-repeat !important;
+                                width: 70px;
+                                @media (max-width:768px){
+                                        position: relative;
+                                        clear:both;
+                                        background-size: cover !important;
+                                        background-position: center center !important;
+                                        background-repeat: no-repeat !important;
+                                        width: 70px;
+                                        margin: 20px auto;
+                                        top: auto;
+                                        left: auto;
+                                        transform: none;
+
+
+                                }
+                              }
+                              .desc_destacado{
+                                text-align: center;
+                                h3 {
+                                  @include clarendon(18px, black);
+                                  text-transform: uppercase;
+                                  letter-spacing: 3px;
+                                  margin-bottom: 10px;
+                                }
+                                p{
+                                  @include clarendon(12px, black);
+                                }
+                                a{
+                                    @include bold(12px, $rojo);
+                                }
+                              }
+                          }
+
+
+                      } // tienda
+                  }// item tienda
+            }
+            .box_ver_mas_tiendas {
+          
+              a{
+                display: inline-block;
+                transition: all .5s ease;
+                h3{
+
+                  &.ver_mas{
+                      @include clarendon(12px, black);
+                      text-transform: uppercase;
+                      margin-bottom: 10px;
+                  }
+
+                }
+
+                  &.btn_ver_mas{
+                    background-color: transparent;
+                    border: none;
+                      img{
+                        &.arrow_down{
+
+                        }
+                      }
+                  }
+                  &:hover{
+                    opacity: 0.7;
+                  }
+              }
+            }
+          .image_dynamic {
+              .img_lg {
+                  min-height:322px!important;
+                  @media(max-width: 1024px){
+                        min-height:275px!important;
+                  }
+                  @media(max-width: 991px){
+                        min-height:323px!important;
+                  }
+
+              }
+              .caption{
+                a.btn_blanco {
+                       border: 1px solid transparent;
+                       background-color: $rojo;
+                       color: white;
+                        &:hover {
+                        border: 1px solid white;
+                        color: white;
+                         //padding: 10px 30px;
+                        // color: white;
+                      }
+                }
+
+              }
+          }
+
+} // novedades
+
+
+//--------------------------------
+// ENTRETENCION
+//--------------------------------
+
+
+section.entretencion {
+  padding: 0 0 40px 0;
+  position: relative;
+    h4 {
+    @include clarendon(20px, black);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+     @media(max-width: 768px){
+         font-size: 18px;
+    }
+     @media(max-width: 375px){
+         font-size: 16px;
+    }
+  }
+      .divider{
+        color:black;
+        margin:0 0 60px 15px;
+        overflow:hidden;
+        text-align:left;   
+     
+    }
+
+      .divider:before{
+          content:"";
+          vertical-align:middle;
+          display:inline-block;
+          width:60px;
+          border-bottom:1px solid black;
+          margin-top: -6px;
+    
+      }
+      .divider:before{
+        margin-right: 10px;
+      }
+        .box_servicio {
+          text-align: center;
+         
+            @media(max-width:991px){
+                //min-height: 230px;
+                padding: 0;
+            }
+            a {
+                display:block;
+               // transition:all 0.2s ease-in-out;
+                 overflow: hidden;
+                      @media(max-width:991px){
+                       // min-height: 230px;
+                      }
+                img {
+                      
+                    transition: all .5s ease;
+                    opacity: 1;
+                }
+
+                &:hover {
+                   @media(min-width:1025px){
+                        img{
+                          transform: scale(1.05);
+                          opacity: 0.9;
+                        }
+                      }
+                
+                }
+            }               
+              
+        }
+        .box_servicio_no_callapse{
+          @extend .box_servicio;
+        }
+        .box_more_info{
+                border: 1px solid $gris_borde;
+                padding: 14px;
+                margin-bottom: 30px;
+                a{
+                  @include clarendon(12px, black);
+                  text-transform: uppercase;
+                  text-align: center;
+                  display:block;
+                  cursor: pointer;
+                  margin: 0;
+                     @media(max-width:991px){
+                      font-size: 10px;
+                      padding: 0;
+                    }
+                }
+              }
+              .box_more_info_no_collapse{
+                  @extend .box_more_info; 
+              }
+
+        .content_servicio{
+               // background-color: tomato;
+                clear:both;
+                margin-bottom: 30px;
+                margin-top: 20px;
+                position: relative;
+                padding-top: 80px;
+                .close_servicio{
+                      top: 23px;
+                      right: 18px;
+                      background: url(../img/close.png) no-repeat;
+                      width: 35px;
+                      height: 37px;
+                      cursor: pointer;
+                      position: absolute;
+                      transition: all 0.3s ease-in-out;
+                      &:hover {
+                        opacity: 0.7;
+                      }
+                  }
+                h4 {
+                  @include clarendon(20px, black);
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    line-height: 24px;
+                       @media(max-width: 768px){
+                           font-size: 14px;
+                      }
+                       @media(max-width: 375px){
+                           font-size: 12px;
+                      }
+
+                  }
+                      p {
+
+                            @include clarendon(14px,black);
+                              margin-top: 20px;
+                        }
+                    .divider{
+                      color:black;
+                      margin:30px 0 30px 15px;
+                      overflow:hidden;
+                      text-align:left;
+                      i{
+                        &.fa{
+                          font-size: 30px;
+                        }
+                      }
+                   
+                  }
+
+                    .divider:before{
+                        content:"";
+                        vertical-align:middle;
+                        display:inline-block;
+                        width:60px;
+                        border-bottom:1px solid black;
+                        margin-top: -6px;
+                  
+                    }
+                    .divider:before{
+                      margin-right: 10px;
+                    }
+                      .img_servicio{
+                         min-height: 380px;
+                        background-size: cover !important;
+                        background-position: center !important;
+                        display: block !important;
+                        background-repeat: no-repeat !important;
+                          @media (max-width: 991px){
+                            min-height: 300px;
+                            margin-bottom: 30px;
+                        }
+
+                      }
+                      .desc_servicio {
+                        .tel {
+                          margin: 50px auto 60px auto;
+                        }
+                        h3 {
+                            @include clarendon(35px,$rojo);
+                            margin-bottom: 30px;
+                            text-transform: capitalize;
+                                 @media (max-width: 991px){
+                                    font-size: 25px;
+                            }
+                        }
+                        p {
+
+                            @include clarendon(12px,black);
+                            margin-bottom: 20px;
+                            padding: 0 20px;
+                        }
+                        a{
+                              @include clarendon(14px, $rojo);
+                             margin-left: 20px;
+                              &.url_agencia {
+                                 @include bold(14px, black);
+                                 text-transform: uppercase;
+                              }
+
+                        }
+                        ul {
+                              margin: 0 0 0 20px;
+                              padding: 0;
+                          li{
+                              @include clarendon(12px, black);
+                              margin-bottom: 10px;
+                            a{
+
+                            }
+                          }
+                        }
+
+                        &.desc_entretencion {
+                          p {
+
+                              @include regular(12px,black);
+                              margin-bottom: 20px;
+                              padding: 0 20px;
+                              line-height: 26px;
+                          }
+                          a{
+                                @include regular(14px, $rojo);
+                                margin-left: 20px;
+                                &.url_agencia {
+                                   @include bold(14px, black);
+                                   text-transform: uppercase;
+                                }
+
+                          }
+                          ul {
+                                margin: 0 0 0 30px;
+                                padding: 0;
+                            li{
+                                @include regular(12px, black);
+                                margin-bottom: 10px;
+                                line-height: 26px;
+                              a{
+
+                              }
+                            }
+                          }
+                        }
+
+                         &.desc_galeria {
+                          p {
+
+                              @include regular(12px,black);
+                              margin-bottom: 20px;
+                              padding: 0 20px;
+                             
+                          }
+                          a{
+                                @include regular(14px, $rojo);
+                                margin: auto;
+                                &.url_agencia {
+                                   @include bold(14px, black);
+                                   text-transform: uppercase;
+                                }
+
+                          }
+                          ul {
+                                margin: 0 0 0 30px;
+                                padding: 0;
+                            li{
+                                @include regular(12px, black);
+                                margin-bottom: 10px;
+                                line-height: 26px;
+                             
+                            }
+                          }
+                        }
+
+                      }
+                     
+
+                  .owl-nav{
+                        &.disabled {
+                          display: none;
+                        }
+                      }
+
+                      .owl-dots {
+                        position: absolute;
+                       right: 30px;
+                        bottom: 30px;
+                        .owl-dot {
+                              span {
+                                  border: 2px solid white;
+                                  background: transparent;
+                                  border-radius: 50px;
+                                  height: 15px;
+                                  width: 15px;
+                                  cursor: pointer;
+                                  @media(max-width: 767px){
+                                      margin-left: 5px;
+                                      margin-right: 5px;
+                                  }
+                                }
+                          }
+                          .owl-dot.active {
+                              span {
+                                background-color: $rojo;
+                              }
+                          }
+
+                        } // dots
+
+                    .box_cartelera{
+                          border: 1px solid black;
+                          padding: 4px;
+                          position: relative;
+                          margin-top: 30px;
+                           @media(max-width: 767px){
+                              padding-left: 10px;
+                            }
+                          .col-xs-8{
+                            position: relative !important;
+                            min-height: 72px;
+                             @media(min-width: 1200px){
+                              min-height: 60px;
+                            }
+                             @media(max-width: 1199px){
+                              min-height: 49px;
+                            }
+                            @media(max-width: 768px){
+                              min-height: 72px;
+                            }
+                            @media(max-width: 767px){
+                              min-height: 29px;
+                            }
+                            a {
+                              
+                                @include bold(14px, black);
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                position: absolute;
+                                display: block;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 200px;
+                                 transition: all 0.3s ease-in-out;
+                                &:hover {
+                                    color: $rojo;
+                                }
+                                  @media(max-width: 767px){
+                             font-size: 11px;
+                             margin-left: 10px;
+                            }
+                            }
+                          }
+                      
+                      
+                    }
+              } // END CONTENT ITEM ENTRETENCION
+               .box_ver_mas_tiendas {
+          
+              a{
+                display: inline-block;
+                transition: all .5s ease;
+                h3{
+
+                  &.ver_mas{
+                      @include clarendon(12px, black);
+                      text-transform: uppercase;
+                      margin-bottom: 10px;
+                  }
+
+                }
+
+                  &.btn_ver_mas{
+                    background-color: transparent;
+                    border: none;
+                      img{
+                        &.arrow_down{
+
+                        }
+                      }
+                  }
+                  &:hover{
+                    opacity: 0.7;
+                  }
+              }
+            }
+          section.galeria_videos {
+              .box_video{
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 30px;
+                height: 312px;
+                background-color: $negro;
+                    .cap_video{
+                      height: 312px;
+                      width:  100%;
+                      background-size: cover !important;
+                      background-position: center top !important;
+                     // display: block !important;
+                      background-repeat: no-repeat !important;
+                      z-index: 9;
+                      position: absolute;
+                    }
+                .lente_video{
+                  width: 100%;
+                  height:100%;
+                  background: rgba(0,0,0,0.2);
+                  display: block;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  z-index: 0;
+
+                }
+                .yt-video{
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  display: block;
+                  height: 312px;
+                  width:  100%;
+                  z-index: 8;
+                }
+              
+                .btn_play_video{
+                  position: absolute;
+                  left: 30px;
+                  bottom: 30px;
+                  cursor: pointer;
+                  z-index: 10;
+                  a{
+                    display: inline-block;
+                  }
+                  p{
+                      @include bold(12px, white);
+                      text-transform: uppercase;
+                  }
+                }
+              }
+          }
+}//END ENTRETENCION
+

@@ -1,0 +1,91 @@
+*::after, *::before {
+  content: '';
+}
+
+.panel-group{
+  .panel {
+      border-color: #f8f7f7;
+    .panel-heading {
+     padding: 20px 20px 20px 0;
+     position: relative;
+     background-color: #f8f7f7;
+    
+     
+      .ribbon{
+        background: url(../img/ribbon_faq.png) no-repeat;
+        width: 66px;
+        height: 42px;
+        @include centerer(false, true);
+   
+        left: -5px;
+      
+      }
+       h4{
+          padding-left: 60px;
+        .cd-faq-trigger {
+          position: relative;
+          display: block;
+          line-height: 1.2;
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin: 0;
+          @include clarendon(14px, $verde);
+          text-transform: uppercase;
+          @media (max-width: 767px){
+              font-size: 14px;
+          }
+        }
+        .cd-faq-trigger::before,
+        .cd-faq-trigger::after {
+          /* flecha a la derecha */
+          position: absolute;
+          right: 24px;
+          @media(max-width:767px){
+               display: none;
+          }
+          top: 50%;
+          height: 2px;
+          width: 13px;
+          //background: #cfdca0;       
+          background: #000;
+          backface-visibility: hidden;
+          transition-property: transform;
+          transition-duration: 0.2s;
+        }
+
+
+        .cd-faq-trigger.collapsed::before {
+    
+          transform: rotate(45deg);
+          right: 32px;
+        
+        }
+        .cd-faq-trigger.collapsed::after {
+          transform: rotate(-45deg);
+        }
+         .cd-faq-trigger::before {
+
+          transform: rotate(-45deg);
+          right: 32px;
+         
+        }
+         .cd-faq-trigger::after {
+          transform: rotate(45deg);
+        }
+       }
+    } //panel heading
+
+    .panel-body{
+      @include regular(14px, black);
+      padding: 30px 60px;
+        @media (max-width: 767px){
+              padding: 30px;
+          }
+    }
+
+  } // panel
+
+} // panel group
+
+
+

@@ -1,0 +1,38 @@
+$rojo : #e40421;
+$rojo_marker: #e40421;
+$verde : #499c2d;
+$rojo_btn_search : #FF0024;
+$negro : #322b2a;
+$gris : #B7B7B7;
+$gris_claro: #E3E3E3;
+$gris_borde: #6A6A6A;
+
+//322b2a
+
+// font stacks
+
+  @mixin bold($size, $color) {
+    font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif;
+    font-size: $size;
+    color: $color;
+  }
+
+  @mixin regular($size, $color){
+  font-family: 'euphemia_ucasregular', Helvetica, Arial, sans-serif;
+  font-size: $size;
+  color: $color;
+  }
+
+  @mixin italic($size, $color){
+
+  font-family: 'euphemia_ucasitalic', Helvetica, Arial, sans-serif;
+  font-size: $size;
+  color: $color;
+  }
+
+  @mixin clarendon($size, $color){
+ font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+  font-size: $size;
+  color: $color;
+  }
+

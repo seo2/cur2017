@@ -1,0 +1,349 @@
+section.tiendas {
+        position: relative;
+        h4 {
+          @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+        }
+            .divider{
+              color:black;
+              margin:0 0 40px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+          
+            }
+            .divider:before{
+              margin-right: 10px;
+            }
+                  a{
+      
+
+        &.back{
+            text-decoration: none;
+            @include clarendon(14px, $rojo);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            transition: all .5s ease;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            &:hover {
+                color: $rojo;
+            }
+            @media(max-width: 767px){
+                  top:25px;
+                  bottom: 0;
+                  font-size: 16px;
+              }
+        }
+      }
+            
+            .grid_tiendas {
+              padding-bottom: 50px;
+                  .item_tienda {
+                    display: block;
+                    overflow: hidden; 
+                    margin-bottom: 30px;
+                
+                      .tienda {
+                        a {
+                          display: block;
+                          position: relative;
+                          overflow: hidden;
+                     
+                          // para nombre de tienda
+                            h4{
+
+                              &.nombre_tienda{
+                                 font-size: 16px;
+                                 color: white;
+                                  @include centerer(true, true);
+                                  opacity: 0;
+                                  transition: all .5s ease;
+                                  z-index: 2;
+                              }
+                            }
+                            .borde {
+                               @include centerer(true, true);
+                               width: 100%;
+                              height: 100%;
+                              border: 1px solid white;
+                              opacity: 0;
+                              transition: all .5s ease;
+                             // background-color: tomato;
+                              z-index: 1;
+                            }
+                            span{
+                                transition: all .5s ease;
+                                opacity: 0;
+                              &.bg_nombre_tienda{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background-color: black;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+
+                              }
+                             
+                            }
+                          .overlay_img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: 10;
+                            width: 100%;
+                            height: 100%;
+                            transition: all .5s ease;
+                          }
+                          img {
+                             transition: all .5s ease;
+                             opacity: 1;
+                          }
+                            &:hover  {
+                                img{
+                                    opacity:0.6;
+                                    transform: scale(1.05);
+                                }
+                                .borde{
+                                  opacity: 1;
+                                  width: 90%;
+                                  height: 90%;
+                                }
+                                span.bg_nombre_tienda{
+                                  opacity: 1;
+                                }
+                                h4.nombre_tienda{
+                                  opacity: 1;
+                                }
+                              
+                            }
+                        } // a
+                          
+                          .box_logo_tienda {
+                              border: 1px solid black;
+                              min-height: 60px;
+                              position: relative;
+                              overflow: hidden;
+                              .logo_tienda {
+                                @include centerer(true, true);
+                                background-size: cover !important;
+                                background-position: center center !important;
+                                background-repeat: no-repeat !important;
+                                width: 70px;
+                                  // @media(max-width: 1024px){
+                                  //    padding: 10px;
+                                  // }
+                              }
+                          }
+                      } // tienda
+                  }// item tienda
+            }
+            .box_ver_mas_tiendas {
+          
+              a{
+                display: inline-block;
+                transition: all .5s ease;
+                h3{
+
+                  &.ver_mas{
+                      @include clarendon(12px, black);
+                      text-transform: uppercase;
+                      margin-bottom: 10px;
+                  }
+
+                }
+
+                  &.btn_ver_mas{
+                    background-color: transparent;
+                    border: none;
+                      img{
+                        &.arrow_down{
+
+                        }
+                      }
+                  }
+                  &:hover{
+                    opacity: 0.7;
+                  }
+              }
+            }
+
+            
+
+
+} // tiendas
+
+
+    section.otras_tiendas {
+           
+              padding-bottom: 50px;
+              h3 {
+                @include clarendon(35px, black);
+                text-transform: uppercase;
+                margin-left: 15px;
+                margin-bottom: 10px;
+                  @media(max-width: 768px){
+                     font-size: 30px;
+                }
+                 @media(max-width: 375px){
+                     font-size: 25px;
+                }
+            
+
+              }
+              h4 {
+                @include clarendon(20px, black);
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                margin-left: 15px;
+                 @media(max-width: 768px){
+                     font-size: 18px;
+                }
+                 @media(max-width: 375px){
+                     font-size: 16px;
+                }
+              }
+                  .divider{
+                    color:black;
+                    margin:0 0 60px 0;
+                    overflow:hidden;
+                    text-align:left; 
+                    margin-left: 15px;  
+                }
+
+                  .divider:before{
+                      content:"";
+                      vertical-align:middle;
+                      display:inline-block;
+                      width:60px;
+                      border-bottom:1px solid black;
+                      margin-top: -6px;
+                
+                  }
+                  .divider:before{
+                    margin-right: 10px;
+                  }
+            .item_tienda {
+                    display: block;
+                    overflow: hidden; 
+                    margin-bottom: 30px;
+                
+                      .tienda {
+                        a {
+                          display: block;
+                          position: relative;
+                          overflow: hidden;
+                      // para nombre de tienda con hover
+
+                      
+                        h4{
+
+                          &.nombre_tienda{
+                             color: white;
+                             font-size: 16px;
+                              @include centerer(true, true);
+                              opacity: 0;
+                              transition: all .5s ease;
+                              z-index: 2;
+                          }
+                        }
+                        .borde {
+                           @include centerer(true, true);
+                           width: 100%;
+                          height: 100%;
+                          border: 1px solid white;
+                          opacity: 0;
+                          transition: all .5s ease;
+                         // background-color: tomato;
+                          z-index: 1;
+                        }
+                        span{
+                            transition: all .5s ease;
+                            opacity: 0;
+                          &.bg_nombre_tienda{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background-color: black;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+
+                          }
+                         
+                        }
+                      .overlay_img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 10;
+                        width: 100%;
+                        height: 100%;
+                        transition: all .5s ease;
+                      }
+                      img {
+                         transition: all .5s ease;
+                         opacity: 1;
+                      }
+                        &:hover  {
+                            img{
+                                opacity:0.6;
+                                transform: scale(1.05);
+                            }
+                            .borde{
+                              opacity: 1;
+                              width: 90%;
+                              height: 90%;
+                            }
+                            span.bg_nombre_tienda{
+                              opacity: 1;
+                            }
+                            h4.nombre_tienda{
+                              opacity: 1;
+                            }
+                          
+                        }
+                       
+                         
+                        }
+                          
+                          .box_logo_tienda {
+                              border: 1px solid black;
+                              min-height: 60px;
+                              position: relative;
+                              overflow: hidden;
+                              .logo_tienda {
+                                @include centerer(true, true);
+                                background-size: cover !important;
+                                background-position: center center !important;
+                                background-repeat: no-repeat !important;
+                                 width: 70px;
+                                // @media(max-width: 1024px){
+                                //    padding: 10px;
+                                // }
+                              }
+                          }
+                      } // tienda
+                  }// item tienda
+        
+}
+

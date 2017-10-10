@@ -1,0 +1,209 @@
+section.arauco_tag {
+
+      ul {
+        &.botonera_tag {
+          @media(max-width: 768px){
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+     
+          padding: 0;
+          list-style-type: none;
+            li{
+                text-align: center; 
+                border: 1px solid black;
+                width: 100%;
+                margin-bottom: 17px;
+                transition:all 0.2s ease-in-out;
+                &:hover {
+                  border-color: $verde;
+                }
+              a{
+               @include bold(15px, black);
+               @media(max-width: 768px){
+                    font-size: 14px;
+               }
+                 padding: 12px 0;
+               display: block;
+               width: 100%;
+               text-decoration: none;
+               text-transform: uppercase;
+               transition:all 0.2s ease-in-out;
+               &:hover {
+                background-color: $verde;
+                color: white;
+               }
+              }
+              &.active{
+                background-color: $verde;
+                color: white;
+                 border: 1px solid transparent;
+                 a{
+                  color: white;
+                 }
+              }
+            }
+
+        }
+      }
+
+      .tag_content{
+        .title_tag {
+          position: relative;
+          margin-bottom: 30px;
+          display: inline-block;
+           margin-bottom: 30px;
+           background-color:$verde; 
+          .ribbon {
+              background-color:$verde; 
+              padding: 13px 10px 14px 20px;
+              display: inline-block;
+              position: relative;
+              margin-right: 60px;
+              height: 42px;
+              h3 {
+                @include clarendon(18px,white);
+                text-transform: uppercase;
+              }
+             
+          }
+          .ribbon_end{
+           background: url(../img/ribbon_end.png) no-repeat;
+           background-position: center;
+           background-size: cover;
+           width: 24px;
+           height: 42px;
+           position: absolute;
+           right: 0;
+           top: 0;
+          }
+
+        }
+        
+      
+          p{
+            @include regular(14px,black);
+            margin-bottom: 25px;
+          }
+          ul{
+              padding: 0 0 0 20px;
+              margin-bottom: 20px;
+            li{
+                @include regular(14px, $verde);
+                margin-bottom: 10px;
+                span{
+                  color: black;
+                  a {
+                    color: black;
+                    font-weight: bold;
+                    transition:all 0.2s ease-in-out;
+                    &:hover {
+                      color: $verde;
+                    }
+                  }
+                }
+               
+
+            }
+          }
+
+      } // tag content
+
+      .box_beneficios {
+            position: relative;
+            border: 9px solid $verde;
+            padding: 30px 20px 40px 20px;
+            margin-bottom: 50px;
+            h3{
+              @include regular(40px, $verde);
+              letter-spacing: 6px;
+              text-transform: uppercase;
+              text-align: center;
+              font-weight: bold;
+              margin-bottom: 20px;
+               @media (max-width: 1024px){
+                 font-size: 30px;
+              }
+              @media (max-width: 991px){
+                 font-size: 32px;
+              }
+
+            }
+            .ribbon_left, .ribbon_right {
+              position: absolute;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              top: 29px;
+               @media (max-width: 1024px){
+                   top:26px;
+              }
+              // @media (max-width: 991px){
+              //   top:26px;
+              // }
+            }
+            .ribbon_left {
+              width: 122px;
+              height: 42px;
+              background-image: url("../img/ribbon_left.png");
+              left: -21px;
+              @media (max-width: 1023px){
+                  width: 40px;
+                  background-image: url("../img/ribbon_left_xs.png");
+                  left: -15px;
+                  
+              }
+             
+
+            }
+            .ribbon_right{
+              width: 122px;
+              height: 42px;
+              background-image: url("../img/ribbon_right.png");
+              right: -21px;
+              @media (max-width: 1023px){
+                  width: 40px;
+                  background-image: url("../img/ribbon_right_xs.png");
+                  right: -15px;
+                 
+              }
+              
+            }
+        .box_items_beneficios {
+              .item_beneficio {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                position: relative;
+                .ico_beneficio {
+                  width: 15%;
+                  display: inline-block;
+                  @include centerer(false, true);
+                    img {
+                        float: left;
+                    } 
+                }
+                  .desc_beneficio {
+                    width: 85%;
+                    float: right;
+                      p {         
+                          @include regular(14px, black);
+                          text-transform: uppercase;
+                          font-weight: bold;
+                          padding-left: 20px;
+                          margin: 0;
+                      }
+                  }
+              }
+        }
+      } // BOX BENEFICIOS
+
+}
+
+section.arauco_tag_faq {
+    @extend .arauco_tag;
+    .box_beneficios, .botonera_tag {
+      margin-bottom: 45px;
+    }
+     @import "modules/_faq.scss";
+}

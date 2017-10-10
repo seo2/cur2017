@@ -1,0 +1,548 @@
+section.servicios_cliente{
+     padding-bottom: 30px;
+  
+      @media (max-width: 768px){
+          padding-top: 0;
+          }
+     position: relative;
+         h4 {
+          @include clarendon(20px, black);
+          text-transform: uppercase;
+          letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+
+            &.divider{
+              color:black;
+              margin:0 0 40px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            &.divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+          
+            }
+            &.divider:before{
+              margin-right: 10px;
+            }
+        }
+              a{
+      
+
+        &.back{
+            text-decoration: none;
+            @include clarendon(14px, $rojo);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            transition: all .5s ease;
+            position: absolute;
+            right: 15px;
+            top: 80px;
+            &:hover {
+                color: $rojo;
+            }
+            @media(max-width: 767px){
+                  top:40px;
+                  bottom: 0;
+                  font-size: 16px;
+              }
+        }
+      }
+
+        .box{
+          .box_slider {
+            .item{
+              a{
+                  .caption{
+                    h3{
+                      @media(max-width: 991px){
+                        font-size: 28px;
+                      }
+                    }
+                  }
+                  .box_slide {
+                    background-position: center center !important;
+                  }
+              }
+            }
+          }
+          .marker{
+            width: 100%;
+            height: 10px;
+            background-color: $rojo_marker;
+            position: absolute;
+            bottom: 0px;
+            display: none;
+            &.active {  
+              display: block;
+
+            }
+          }
+        }
+
+              #content_horarios{
+                margin-top: 0 !important;
+              }
+              .content_servicio{
+            
+                clear:both;
+                margin-bottom: 30px;
+                margin-top: 20px;
+                position: relative;
+
+                .close_servicio{
+                      top: 23px;
+                      right: 18px;
+                      background: url(../img/close.png) no-repeat;
+                      width: 35px;
+                      height: 37px;
+                      cursor: pointer;
+                      position: absolute;
+                      transition: all 0.3s ease-in-out;
+                      z-index: 10;
+                      &:hover {
+                        opacity: 0.7;
+                      }
+                 
+                  }
+                h4 {
+                  @include clarendon(20px, black);
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    line-height: 20px;
+                   @media(max-width: 768px){
+                       font-size: 14px;
+                  }
+                   @media(max-width: 375px){
+                       font-size: 15px;
+                  }
+
+                                
+                  }
+           
+                    .divider{
+                      color:black;
+                      margin:30px 0 30px 15px;
+                      overflow:hidden;
+                      text-align:left;
+                      i{
+                        &.fa{
+                          font-size: 30px;
+                        }
+                      }
+                   
+                  }
+
+                    .divider:before{
+                        content:"";
+                        vertical-align:middle;
+                        display:inline-block;
+                        width:60px;
+                        border-bottom:1px solid black;
+                        margin-top: -6px;
+                  
+                    }
+                    .divider:before{
+                      margin-right: 10px;
+                    }
+                      .img_servicio{
+                         min-height: 380px;
+                        background-size: cover !important;
+                        background-position: center !important;
+                        display: block !important;
+                        background-repeat: no-repeat !important;
+                          @media (max-width: 991px){
+                            min-height: 300px;
+                            margin-bottom: 30px;
+                        }
+
+                      }
+                      .desc_servicio {
+                        .tel {
+                          margin: 50px auto 60px auto;
+                        }
+                        #map{
+                          min-height: 500px;
+                          width: 100%;
+                          background-color: #ccc;
+                        }
+                        h3 {
+                            @include clarendon(35px,$rojo);
+                            margin-bottom: 30px;
+                            text-transform: capitalize;
+                                 @media (max-width: 991px){
+                                    font-size: 25px;
+                            }
+                        }
+                        p {
+
+                            @include clarendon(12px,black);
+                            margin-bottom: 20px;
+                            padding: 0 20px;
+                        }
+                        a{
+                              @include clarendon(14px, $rojo);
+                              margin-left: 20px;
+                              &.url_agencia {
+                                 @include bold(14px, black);
+                                 text-transform: uppercase;
+                              }
+
+                        }
+                        ul {
+                              margin: 0 0 0 20px;
+                              padding: 0;
+                          li{
+                              @include clarendon(12px, black);
+                              margin-bottom: 10px;
+                            a{
+
+                            }
+                          }
+                        }
+
+
+                    section.box_horarios{
+                                        
+                    p{ 
+                        @include regular(15px, black);
+                        margin: 0 0 30px 0;
+                        padding: 0;
+                    }
+                       @media (max-width: 767px){
+                                     margin-top: 20px;
+                      }
+                      *::after, *::before {
+                        content: '';
+                      }
+                      .panel-group{
+                        .panel {
+                            border-color: #f8f7f7;
+                          .panel-heading {
+                           padding: 20px 20px 20px 0;
+                           position: relative;
+                           background-color: #f8f7f7;
+
+                             h4{
+                                padding-left: 30px;
+                                letter-spacing: normal;
+                              .cd-faq-trigger {
+                                position: relative;
+                                display: block;
+                                line-height: 1.2;
+                                margin: 0;
+                                @include clarendon(18px, black);
+                                text-transform: uppercase;
+                                @media (max-width: 767px){
+                                    font-size: 14px;
+                                     line-height: 17px;
+                                }
+                              }
+                              .cd-faq-trigger::before,
+                              .cd-faq-trigger::after {
+                                /* flecha a la derecha */
+                                position: absolute;
+                                right: 24px;
+                                @media(max-width:767px){
+                                     display: none;
+                                }
+                                top: 50%;
+                                height: 2px;
+                                width: 13px;
+                                //background: #cfdca0;       
+                                background: #000;
+                                backface-visibility: hidden;
+                                transition-property: transform;
+                                transition-duration: 0.2s;
+                              }
+
+
+                              .cd-faq-trigger.collapsed::before {
+                          
+                                transform: rotate(45deg);
+                                right: 32px;
+                              
+                              }
+                              .cd-faq-trigger.collapsed::after {
+                                transform: rotate(-45deg);
+                              }
+                               .cd-faq-trigger::before {
+
+                                transform: rotate(-45deg);
+                                right: 32px;
+                               
+                              }
+                               .cd-faq-trigger::after {
+                                transform: rotate(45deg);
+                              }
+
+
+
+                             }
+
+
+                          } //panel heading
+
+                          .panel-body{
+                            padding:30px;
+                              @media (max-width: 767px){
+                                    padding: 20px;
+                                }
+                              p{
+                                @include regular(15px, black);
+                                margin: 0 0 30px 0;
+                                padding: 0;
+                              
+                              }
+                              &.nopad {
+                                p {
+                                  padding: 30px 30px 0 30px;
+                                }
+                              }
+                              h3 {
+                                @include bold(15px, black);
+                                margin-left: 20px;
+                                text-transform: uppercase;
+
+                              }
+                              h4 {
+                                @include regular(18px, black);
+                                text-transform: uppercase;
+                                margin-bottom: 20px;
+                                letter-spacing: normal;
+
+                              }
+                              ol{
+                                li{
+                                  @include regular(14px, black);
+                                }
+                              }
+                              table#table_horarios_estacionamientos {
+                                border-left: none;
+                                border-right: none;
+                                margin-bottom: 0;
+                                tr{
+                                  th{
+                                    @include bold(15px, #474747);
+                                    text-transform: uppercase;
+                                    padding: 15px 0 15px 20px;
+                                    width: 20%;
+                                    .red_dot{
+                                         width: 10px;
+                                         height: 10px;
+                                         background: #FF2349; 
+                                         border-radius: 70px;
+                                         display: inline-block;
+                                         margin-right: 6px;
+                                    }
+                                    .green_dot{
+                                         width: 10px;
+                                         height: 10px;
+                                         background: #00D13C; 
+                                         border-radius: 70px;
+                                         display: inline-block;
+                                         margin-right: 6px;
+                                    }
+                                  }
+                                  td{
+                                    @include regular(13px, #474747);
+                                    text-transform: uppercase;
+                                    padding: 15px;
+                                        &.titulo_tabla{
+                                          background-color: $verde;
+                                          padding: 15px 0;
+                                          h5{
+                                            @include bold(14px, white);
+                                          letter-spacing: 4px;
+                                            display: block;
+                                          
+                                          }
+                                        }
+                                        &.bold{
+                                          @include bold(12px, #474747);
+                                          text-transform: uppercase;
+                                          text-align: left;
+                                        }
+                                        
+                                  }
+                                }
+                               
+                              }
+                          }
+
+                        } // panel
+
+                      } // end panel group
+
+                    } // end box horarios
+                        
+
+      
+
+                        form#form_sac_contacto {
+                            .form-group {
+                              margin-bottom: 30px;
+                              position: relative;
+                                .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+                                  width: 100%;
+                                }
+           
+
+                        span{
+                          &.filter-option{
+                                letter-spacing: 2px;
+                              @include bold(10px, $gris);
+                              text-transform: uppercase;
+                              font-style: italic;
+                             transition: all .3s ease;
+                             &:hover{
+                              color: black;
+                             }
+                          }
+                          &.caret {
+                            color: black;
+                          }
+                        }
+
+                          .btn-default{
+                            border-color: black;
+                            border-radius: 0;
+                            padding-top: 8px;
+                            width: 100%;
+                            height: 50px;
+                            &:hover, &:focus {
+                              background-color:white;
+                            }
+                          }
+                          .dropdown-menu{
+                            ul {
+                              li{
+                                
+                                a{
+                                 @include bold(11px, black);
+                                 text-transform: uppercase;
+                                }
+                              }
+                            }
+                          }
+
+                label {
+                  @include bold(14px, black);
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                }
+              
+                input, textarea {
+                    
+                  &.form-control{
+                    border-radius: 0;
+                    border-color: black;
+                    height: 50px;
+                  }
+                  &.form-control::-webkit-input-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+                  &.form-control:-moz-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+                  &.form-control::-moz-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+                  &.form-control:-ms-input-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+
+                }    
+                  textarea {
+                      &.form-control{
+                         resize: none;
+                         height: 70px;
+                      }
+                }
+                   .checkbox{
+                      label {
+                        @include italic(12px, black);
+                        text-transform: none;
+                        letter-spacing: normal;
+                      }
+                  } 
+
+            
+                .btn_rojo {
+                  border-radius:0;
+                  border-color: transparent;
+                  font-size: 14px;
+                  padding: 14px 30px;
+                  display: inline-block;
+                  width: 200px;
+                    &:hover {
+                      border-color: black;
+                    }
+                  @media(max-width: 991px){
+                      width: 100%;
+                      font-size: 18px;
+                  }
+                }
+            }
+          }
+      } // end desc servico
+
+
+
+                .datos_como_llegar {
+
+                  @media(max-width: 767px){
+                        margin: 30px 0;
+                  }
+                    .col-xs-2, .col-xs-10{
+                      min-height: 120px;
+                      img{
+                        @include centerer(true, true);
+                      }
+                    }
+                   p {
+                            @include clarendon(12px,black) ;
+                            margin-bottom: 15px;
+
+                        }
+                         a{
+                              @include clarendon(12px, black);
+                               transition: all 0.4s ease-in-out;
+                              &:hover {
+                                text-decoration: underline;
+                              }
+                        }
+                         .centerer{
+                               @include centerer(flase, true);
+                               width: 100%;
+                            }  
+                }
+  } // END CONTENT SERVICIO
+
+          
+  
+}

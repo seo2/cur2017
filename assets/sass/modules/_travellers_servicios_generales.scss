@@ -1,0 +1,653 @@
+section.travellers_servicios_generales{
+    padding: 0 0 35px 0;
+    position: relative;
+  h4 {
+    @include clarendon(20px, black);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+     @media(max-width: 768px){
+         font-size: 18px;
+    }
+     @media(max-width: 375px){
+         font-size: 16px;
+    }
+  }
+      .divider{
+        color:black;
+        margin:0 0 60px 15px;
+        overflow:hidden;
+        text-align:left;   
+     
+    }
+
+      .divider:before{
+          content:"";
+          vertical-align:middle;
+          display:inline-block;
+          width:60px;
+          border-bottom:1px solid black;
+          margin-top: -6px;
+    
+      }
+      .divider:before{
+        margin-right: 10px;
+      }
+      a{
+      
+
+        &.back{
+            text-decoration: none;
+            @include clarendon(14px, $rojo);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            transition: all .5s ease;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            &:hover {
+                color: $rojo;
+            }
+            @media(max-width: 767px){
+                  top:50px;
+                  bottom: 0;
+                  font-size: 16px;
+              }
+        }
+      }
+
+      .slider_servicios_generales {
+        margin-top: 0px;
+        min-height: 380px;
+        position: relative;
+          .item {
+
+                  .col-md-6 {
+                        padding-left: 0px;
+                       padding-right: 0px;
+               
+
+                  }
+             
+                .img_servicio{
+                   min-height: 380px;
+                  background-size: cover !important;
+                  background-position: center !important;
+                  display: block !important;
+                  background-repeat: no-repeat !important;
+                  position: relative;
+                    @media (max-width:767px){
+                      min-height: 200px;
+                  }
+
+                }
+                .desc_servicio {
+                  background: #FBFBFB;
+                  //background-color: tomato;
+                  padding: 30px;
+                  min-height: 380px;
+                  @media (max-width: 991px){
+                    min-height: 0;
+                  }
+        
+
+                  h3 {
+                      @include clarendon(35px,$rojo);
+                      margin-bottom: 30px;
+                      text-transform: capitalize;
+                       @media (max-width: 991px){
+                          font-size: 25px;
+                  }
+                  }
+                  p {
+
+                      @include clarendon(12px,black);
+                      margin-bottom: 20px;
+                  }
+                  a{
+                        @include clarendon(14px, $rojo);
+
+                  }
+                  ul {
+                        margin: 0 0 0 20px;
+                        padding: 0;
+                    li{
+                        @include clarendon(12px, black);
+                        margin-bottom: 10px;
+                      a{
+
+                      }
+                    }
+                  }
+
+                }
+
+
+          }
+          .owl-nav{
+            &.disabled {
+              display: none;
+            }
+          }
+          .owl-dots {
+             text-align: center;
+             margin-top: 20px;
+                // @media (max-width:991px){
+                //   right: auto;
+                //   bottom: auto;
+                //   top: 208px;
+                //   @include centerer(true, false);
+                // }
+                // &.disabled {
+                //   display: none;
+                // }
+            .owl-dot {
+                  span {
+                      border: 2px solid $gris;
+                      background: transparent;
+                      border-radius: 50px;
+                      height: 15px;
+                      width: 15px;
+                      cursor: pointer;
+                    }
+              }
+              .owl-dot.active {
+                  span {
+                    background-color: $rojo;
+                  }
+              }
+
+            } // dots
+
+
+      } // slider servicios generales
+
+            a{
+              &.ver{
+                text-decoration: none;
+                @include clarendon(12px, black);
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: inline-block;
+                transition: all .5s ease;
+                position: absolute;
+                right: 15px;
+                top: 35px;
+                @media(max-width:768px){
+                    top: 40px;
+                    font-size: 10px;
+                  }
+                   @media(min-width:768px){
+                     &:hover{
+                        color: $rojo;
+                    } 
+                  }
+                    i{
+                      &.fa-map-marker{
+                        color: black;
+                        font-size:26px;
+                      }
+                    }          
+              }
+
+            }
+} //  FIN SERVICIOS GENERALES
+
+//--------------------------------
+// SERVICIOS ADICIONALES 
+//--------------------------------
+
+
+section.travellers_servicios_adicionales{
+  padding: 0 0 70px 0;
+        h4 {
+        @include clarendon(20px, black);
+          text-transform: uppercase;
+          letter-spacing: 5px;
+         @media(max-width: 768px){
+             font-size: 18px;
+        }
+         @media(max-width: 375px){
+             font-size: 16px;
+        }
+      }
+      .divider{
+        color:black;
+        margin:0 0 60px 15px;
+        overflow:hidden;
+        text-align:left;   
+     
+      }
+
+      .divider:before{
+          content:"";
+          vertical-align:middle;
+          display:inline-block;
+          width:60px;
+          border-bottom:1px solid black;
+          margin-top: -6px;
+      }
+      @media(max-width:767px){
+        .divider:before{
+          display: none !important;
+
+        }
+          .divider:after{
+        display: none !important;
+        }
+      }
+
+      .divider:before{
+        margin-right: 10px;
+      }
+        .box_servicio {
+          border: 1px solid $gris_borde;
+          text-align: center;
+          padding: 10px;
+          min-height: 220px;
+            @media(max-width:991px){
+                min-height: 0;
+                padding: 4px;
+                height: 200px;
+            }
+            a {
+                display:block;
+                border: 8px solid transparent;
+                transition:all 0.2s ease-in-out;
+                min-height: 220px;
+                  @media(max-width:991px){
+                    min-height: 0;
+                    height: 190px;
+                  }
+               &.borde_verde {
+                  
+                &:hover, &.active{
+                    border-color: #009C2A;
+                    border-radius: 0;
+                  }
+               }
+                &.borde_azul {
+                  &:hover, &.active{
+                    border-color: #004782;
+                    border-radius: 0;
+                  }
+               }
+                &.borde_naranja {
+                &:hover, &.active{
+                    border-color:#FF5425;
+                    border-radius: 0;
+                  }
+               }
+                &.borde_amarillo {
+                &:hover, &.active{
+                    border-color:#FFAF37;
+                    border-radius: 0;
+                  }
+               }
+                &.borde_rojo {
+                &:hover, &.active{
+                    border-color: #F60C18;
+                    border-radius: 0;
+                  }
+               }
+                &.borde_verde_oscuro {
+                 &:hover, &.active{
+                    border-color: #499706;
+                    border-radius: 0;
+                  }
+               }
+              
+              img {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                max-width: 90px;
+                max-height: 90px;
+                display: block;
+                opacity: 0.5;
+                 transition:all 0.2s ease-in-out;
+                 @media(max-width:991px){
+                    max-width: 50px;
+                    max-height: 50px;
+                 }
+
+              
+              }
+                p{
+                  @include clarendon(20px, black);
+                  text-align: center;
+                  margin-bottom: 25px;
+                  margin: 0;
+                  padding: 0 20px;
+                  line-height: 24px;
+                  @media(max-width:991px){
+                      font-size: 14px;
+                      line-height: 26px;
+                      margin: 0;
+                      padding: 0;
+                  }
+
+                }
+
+                &:hover {
+                  img{
+                    opacity: 1;
+                  }
+                }
+            }               
+              
+        }
+        .box_more_info{
+                border-left: 1px solid $gris_borde;
+                border-right: 1px solid $gris_borde;
+                border-bottom: 1px solid $gris_borde;
+                padding: 14px;
+                margin-bottom: 30px;
+                a{
+                  @include bold(12px, black);
+                  text-transform: uppercase;
+                  text-align: center;
+                  display:block;
+                  cursor: pointer;
+                  margin: 0;
+                     @media(max-width:991px){
+                        font-size: 10px;
+                      padding: 0;
+                    }
+                }
+              }
+
+              .content_servicio{
+               // background-color: tomato;
+                clear:both;
+                margin-bottom: 30px;
+                margin-top: 20px;
+                position: relative;
+                .close_servicio{
+                      top: 23px;
+                      right: 18px;
+                      background: url(../img/close.png) no-repeat;
+                      width: 35px;
+                      height: 37px;
+                      cursor: pointer;
+                      position: absolute;
+                      transition: all 0.3s ease-in-out;
+                      &:hover {
+                        opacity: 0.7;
+                      }
+                             @media(max-width: 767px){
+                           top: -17px;
+                           z-index: 1000;
+                           right: 30px;
+                      }
+                  }
+                h4 {
+                  @include clarendon(20px, black);
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    line-height: 20px;
+                   @media(max-width: 768px){
+                       font-size: 14px;
+                  }
+                   @media(max-width: 375px){
+                       font-size: 15px;
+                  }
+
+                  &.verde {
+                   
+                       color: #009C2A;
+                     
+                  }
+                   &.azul {
+                   
+                       color: #004782;
+                     
+                  }
+                   &.naranja {
+                   
+                       color:#FF5425;
+                     
+                  }
+                   &.amarillo {
+                   
+                       color:#FFAF37;
+                     
+                  }
+                   &.rojo {
+                   
+                       color: #F60C18;
+                     
+                  }
+                   &.verde_oscuro {
+                    
+                       color: #499706;
+                     }                  
+                  }
+           
+                    .divider{
+                      color:black;
+                      margin:30px 0 30px 15px;
+                      overflow:hidden;
+                      text-align:left;
+                      i{
+                        &.fa{
+                          font-size: 30px;
+                        }
+                      }
+                   
+                  }
+
+                    .divider:before{
+                        content:"";
+                        vertical-align:middle;
+                        display:inline-block;
+                        width:60px;
+                        border-bottom:1px solid black;
+                        margin-top: -6px;
+                  
+                    }
+                    .divider:before{
+                      margin-right: 10px;
+                    }
+                      .img_servicio{
+                         min-height: 380px;
+                        background-size: cover !important;
+                        background-position: center !important;
+                        display: block !important;
+                        background-repeat: no-repeat !important;
+                          @media (max-width: 991px){
+                            min-height: 200px;
+                            margin-bottom: 30px;
+                        }
+
+                      }
+                      .desc_servicio {
+                        .tel {
+                          margin: 50px auto 60px auto;
+                        }
+                        h3 {
+                            @include clarendon(35px,$rojo);
+                            margin-bottom: 30px;
+                            text-transform: capitalize;
+                                 @media (max-width: 991px){
+                                    font-size: 25px;
+                            }
+                        }
+                        p {
+
+                            @include clarendon(12px,black);
+                            margin-bottom: 20px;
+                            padding: 0 20px;
+                        }
+                        a{
+                              @include clarendon(14px, $rojo);
+                              margin-left: 20px;
+                              &.url_agencia {
+                                 @include bold(14px, black);
+                                 text-transform: uppercase;
+                              }
+
+                        }
+                        ul {
+                              margin: 0 0 0 20px;
+                              padding: 0;
+                          li{
+                              @include clarendon(12px, black);
+                              margin-bottom: 10px;
+                            a{
+
+                            }
+                          }
+                        }
+
+                        *::after, *::before {//
+                          content: '';
+                        }
+
+                        .panel-group{
+                          .panel {
+                              border-color: #f8f7f7;
+                            .panel-heading {
+                             padding: 20px 20px 20px 0;
+                             position: relative;
+                             background-color: #f8f7f7;
+
+                               h4{
+                                  padding-left: 30px;
+                                  letter-spacing: normal;
+                                .cd-faq-trigger {
+                                  position: relative;
+                                  display: block;
+                                  line-height: 1.2;
+                                  margin: 0;
+                                  @include clarendon(18px, $verde);
+                                  text-transform: uppercase;
+                                  @media (max-width: 767px){
+                                      font-size: 14px;
+                                       line-height: 17px;
+                                  }
+                                }
+                                .cd-faq-trigger::before,
+                                .cd-faq-trigger::after {
+                                  /* flecha a la derecha */
+                                  position: absolute;
+                                  right: 24px;
+                                  @media(max-width:767px){
+                                       display: none;
+                                  }
+                                  top: 50%;
+                                  height: 2px;
+                                  width: 13px;
+                                  //background: #cfdca0;       
+                                  background: #000;
+                                  backface-visibility: hidden;
+                                  transition-property: transform;
+                                  transition-duration: 0.2s;
+                                }
+
+
+                                .cd-faq-trigger.collapsed::before {
+                            
+                                  transform: rotate(45deg);
+                                  right: 32px;
+                                
+                                }
+                                .cd-faq-trigger.collapsed::after {
+                                  transform: rotate(-45deg);
+                                }
+                                 .cd-faq-trigger::before {
+
+                                  transform: rotate(-45deg);
+                                  right: 32px;
+                                 
+                                }
+                                 .cd-faq-trigger::after {
+                                  transform: rotate(45deg);
+                                }
+
+
+
+                               }
+
+
+                            } //panel heading
+
+                            .panel-body{
+                              padding: 30px 60px;
+                                @media (max-width: 767px){
+                                      padding: 20px;
+                                  }
+                                p{
+                                  @include regular(15px, black);
+                                
+                                }
+                                h3 {
+                                  @include bold(15px, black);
+                                  margin-left: 20px;
+                                  text-transform: uppercase;
+
+                                }
+                                ol{
+                                  li{
+                                    @include regular(14px, black);
+                                  }
+                                }
+                            }
+
+                          } // panel
+
+                        }
+                      }
+                      .box_agencia{
+                        margin-bottom: 30px;
+                      }
+                      .head_agencia {
+                        background-color: #F2F2F2;
+                        height: 100px;
+                        position: relative;
+                        margin-bottom: 30px;
+                        img {
+                          @include centerer(true, true);
+                          max-height: 80px;
+                        }
+
+                      }
+
+                      .box_ubicacion {
+                        border: 2px solid #009C2A;
+                        margin-bottom: 30px;
+                        padding-bottom: 30px;
+                      
+                        h2 {
+                          display: block;
+                          background-color: #009C2A;
+                          @include bold(20px, white);
+                          text-align: center;
+                          text-transform: uppercase;
+                          padding: 14px 0;
+                          margin: 4px;
+
+
+                        }
+                        .lista {
+                          padding: 0px 10px 0px 10px;
+                          ul {
+                             margin: 30px 0 0 0;
+                            &.dashed {
+                              list-style-type: none;
+                            }
+                            &.dashed > li {
+                              text-indent: -5px;
+                            }
+                            &.dashed > li:before {
+                              content: "-";
+                              text-indent: -5px;
+                            }
+                            li{
+                                @include bold(16px, black);
+                            }
+                          }
+                        }
+                      
+                      }
+              } // END CONTENT SERVICIO
+}//END SERVICIOS ADICIONALES

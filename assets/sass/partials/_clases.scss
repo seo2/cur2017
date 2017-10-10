@@ -1,0 +1,409 @@
+.anchor_entretencion{
+  position: absolute;
+  top: -194px;
+  width: 5px;
+  height: 5px;
+  //background-color: tomato;
+}
+.anchor_seccion{
+  position: absolute;
+  top: -222px;
+  width: 5px;
+  height: 5px;
+ // background-color: tomato;
+  z-index: 10;
+}
+.bottom{
+  position: absolute;
+  
+}
+.panel-group{
+  position: relative;
+}
+.nav_desktop{
+    @media(max-width: 991px){
+     display: none;
+  }
+}
+.ancla{
+  position: absolute;
+  width: 10px; 
+  height: 10px;
+  //background-color: tomato;
+  top: -185px;
+  @media(max-width: 768px){
+      top: -90px;
+  }
+}
+.anclita_xs {
+    position: absolute;
+    top: -140px;
+    height: 10px;
+    width: 10px;
+   // background-color: tomato;
+}
+
+//ancla servicio al cliente mobile y como llegar mobile
+.anclita_xs3 {
+    position: absolute;
+    top: -150px;
+    height: 10px;
+    width: 10px;
+   // background-color: tomato;
+}
+
+// ancla servicios adicionales
+.anclita_xs4 {
+    position: absolute;
+    top: -150px;
+    height: 10px;
+    width: 10px;
+   // background-color: tomato;
+   // z-index: 10000000;
+}
+
+// ancla galerias vida en distrito
+.anclita_xs5 {
+    position: absolute;
+    top: 0px;
+    height: 10px;
+    width: 10px;
+   // background-color: tomato;
+}
+
+
+
+
+
+.anclita {
+    position: absolute;
+    top: -150px;
+    height: 10px;
+    width: 10px;
+}
+// .anclita2 {
+//     position: absolute;
+//     top: 220px;
+//     height: 10px;
+//     width: 10px;
+// }
+
+ .content_servicio{
+    position: relative;
+  }
+
+.titulo_seccion{
+  margin-top: 30px;
+  &.sin_slider{
+    margin-top: 100px;
+      // @media(max-width: 768px){
+      //          margin-top: 30px;
+      //     }
+  }
+          h4 {
+          @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+           @media(max-width: 768px){
+               font-size: 18px;
+          }
+           @media(max-width: 375px){
+               font-size: 16px;
+          }
+        }
+            .divider{
+              color:black;
+             // margin:0 0 20px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+                 margin-right: 10px;
+          
+            }
+           a{
+            
+
+              &.back{
+                  text-decoration: none;
+                  @include clarendon(14px, $rojo);
+                  text-transform: uppercase;
+                  letter-spacing: 4px;
+                  display: inline-block;
+                  transition: all .5s ease;
+                  float: right;
+                  &:hover {
+                      color: $negro;
+                  }
+                  @media(max-width: 767px){
+                        font-size: 16px;
+                        margin-top: 20px;
+                    }
+              }
+            }
+
+}// titulo seccion
+
+.main_content {
+  .titulo_seccion {
+    margin: 0 0 30px 0;
+  }
+}
+
+.modal-backdrop {
+  z-index: 1;
+}
+.lente {
+  width: 100%;
+  min-height: 610px;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.texto_negro_bold{
+  font-weight: bold;
+  color: black;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.uppercase_bold{
+  text-transform: uppercase;
+   font-family: 'euphemia_ucasregular', Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+}
+a{
+  &.ver_mas_tiendas{
+      @include clarendon(12px, black);
+      text-transform: uppercase;
+      transition:all 0.2s ease-in-out;
+       &.raya_after{
+              color:black;
+              margin:0 0 40px 15px;
+              overflow:hidden;
+              text-align:left;   
+           
+          }
+
+            &.raya_after:after{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+                 margin-left: 10px;
+            }
+            &:hover {
+              color: $rojo;
+            }
+  }
+}
+.share{
+  @include clarendon(12px, black);
+  margin: 10px 0;
+}
+.border {
+  border-top: 1px solid #B0B0B0;
+}
+.texto_rojo {
+    color: $rojo !important;
+}
+.min-height {
+  min-height: 480px;
+    @media(max-width: 991px){
+        min-height: 480px;
+  }
+}
+.relative {
+  position: relative;
+}
+
+.bg_blanco {
+  background-color: #FFF;
+}
+
+.borde_interior{
+    border: 1px solid blue;
+    -webkit-box-shadow: inset 0 0 0 10px red;
+    -moz-box-shadow: inset 0 0 0 10px red;
+    box-shadow: inset 0 0 0 10px red;
+}
+
+
+// BOTONES SLIDER
+/*----------------------------------------------------------*/
+%btn_blanco{
+    background-color: transparent;
+    @include bold(12px, black);
+    bottom: 100px;
+    border-radius: 0;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    // width: 160px;
+    // height: 43px;
+    transition:all 0.2s ease-in-out;
+    letter-spacing: 3px;
+      &:hover {
+      border: 1px solid transparent;
+      background-color: $rojo;
+      color: white;
+
+      }
+
+}
+%btn_single_image{
+             background-color: $rojo;
+            @include bold(12px, white);
+            @include centerer(true, false);
+            bottom: 50px;
+            border-radius: 0;
+            padding: 10px 30px;
+           // height: 43px;
+            letter-spacing: 3px;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            transition:all 0.2s ease-in-out;
+                  &:hover {
+                    border: 1px solid white;
+                    background-color: $rojo;
+                    color: white;
+                    //padding: 10px 30px;
+
+              }
+
+}
+
+  .btn_rojo2{
+    @extend %btn_single_image;
+    bottom: 50px;
+  }
+
+
+
+/*----------------------------------------------------------*/
+
+%link_rojo{
+  color: $rojo;
+  text-decoration: none;
+  display: block;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+        @media (max-width: 767px){
+            right: 15px;
+        }
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    &:hover i {
+        color: #fff;
+        top: 5px;
+    }
+    i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+      left: 16px;
+      top: 13px;
+      font-size: 19px;
+
+      transition: all 0.3s ease;
+    }
+}
+
+//centra verticalmente el modal
+//de bootstrap
+.modal {
+  text-align: center;
+  padding: 0!important;
+  margin-top: 60px;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+  .btn_rojo {
+    background-color: $rojo;
+    color: white;
+    text-transform: uppercase;
+    @include bold(24px, white);
+    border-color: transparent;
+    border-radius: 8px;
+    padding: 2px 10px;
+    display: inline;
+    transition:all 0.2s ease-in-out;
+      &:hover {
+        background-color: white;
+        color: $rojo;
+      }
+  }
+
+
+.btn_negro{
+    background-color: $negro;
+    color: $rojo;
+    text-transform: uppercase;
+    @include bold(24px, $rojo);
+    border-color: transparent;
+    border-radius: 0px;
+    padding: 2px 10px;
+    border: none;
+    transition:all 0.2s ease-in-out;
+    width: 100%;
+      &:hover {
+        background-color: $negro;
+        color: white;
+      }
+  }
+
+    @media (max-width: 1024px) {
+      .wow {
+          visibility: visible !important;
+          -webkit-animation: none !important;
+             -moz-animation: none !important;
+               -o-animation: none !important;
+              -ms-animation: none !important;
+                  animation: none !important;
+        } 
+    }
+
+.sin_borde{
+  border: none !important;
+}

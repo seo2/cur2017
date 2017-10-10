@@ -1,0 +1,311 @@
+section.cartelera {
+      position: relative;
+        .back{
+          margin-bottom: 20px;
+          }
+        padding-bottom: 60px;
+        margin-top: 0;
+     
+        h4 {
+            @include clarendon(20px, black);
+              text-transform: uppercase;
+              letter-spacing: 5px;
+             @media(max-width: 768px){
+                 font-size: 18px;
+            }
+             @media(max-width: 375px){
+                 font-size: 16px;
+            }
+        }
+        h3 {
+            @include clarendon(40px, black);
+              text-transform: uppercase;
+              letter-spacing: 5px;
+             @media(max-width: 768px){
+                 font-size: 30px;
+            }
+             @media(max-width: 375px){
+                 font-size: 20px;
+            }
+        }
+            .divider, .divider_left{
+              color:black;
+              margin:0 0 10px 15px;
+              overflow:hidden;
+              text-align:left;   
+          }
+
+          .divider_left{
+            margin-left: 0; 
+            margin-top: 10px;
+            margin-bottom: 50px;
+          }
+
+            .divider:before, .divider_left:before,
+            .divider_left:after {
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+                margin-top: -6px;
+          
+            }
+          
+            .divider:before, .divider_left:before{
+              margin-right: 10px;
+            }
+              .divider_left:after{
+                margin-left: 10px;
+            }
+            
+        .content_cartelera{
+              margin: 60px 0;
+             .main_title{
+                  display: inline-block;
+             }
+            .evento {
+              padding: 40px 0;
+                .fecha {
+                  
+                  .num{
+                        float: left;
+                        margin-right: 20px;
+                        position: relative;
+                      p{
+                         @include clarendon(60px, $rojo);
+                          font-weight: bold;
+                          span {
+                            font-size: 30px;
+                            color: black;
+                            position: absolute;
+                            bottom: -20px;
+                            left: 0;
+                          }
+                      }
+                     
+                  }
+                  .mes{
+                      float: left;
+                      margin-top: 17px;
+                      p{
+                        @include clarendon(20px, black);
+                        text-transform: uppercase;
+
+                        margin: 0;
+                        padding: 0;
+
+                        &.dia, &.dia_2 {
+                            @include regular(14px, black );
+                            text-transform: uppercase;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        &.dia_2{
+                          font-size: 20px;
+                        }
+
+                      }
+                      
+                  }
+
+                } //fecha
+        
+          .tit_evento{
+                    position: relative;
+                    margin-top: 30px;
+                    p{
+                      @include bold(30px, black);
+                      text-transform: uppercase;
+                      margin-left: 40px;
+                      @media(max-width:768px){
+                          font-size: 24px;
+                      }
+
+                    }
+                  .triangle_top_left{ 
+                       width: 0; 
+                       height: 0; 
+                       border-top: 30px solid $rojo; 
+                       border-right: 30px solid transparent; 
+                       position: absolute;
+                       left: 0;
+                       top: 8px;
+                    }
+
+                }
+                .datos_evento{
+                  .hora {
+                    p{
+                      @include clarendon(20px, black);
+                      text-transform: uppercase;
+                      margin-bottom: 4px;
+                      &.lugar {
+                          @include clarendon(14px, black );
+                          text-transform: uppercase;
+                      }
+                    }
+                  }
+                  .desc{
+                        margin-top: 46px;
+                        p{
+                            @include regular(12px, black);
+                          }                    
+
+                  }
+                  .desc_2{
+                    @extend .desc;
+                     margin-top: 0px;
+                  }
+                } //datos evento
+
+            }
+             .divisor {
+                height: 2px;
+                border-bottom: 2px solid $rojo;
+                margin: 0 15px;
+                }
+      } // fin content cartelera
+
+      .content_promos {
+                margin-top: 30px;
+             .item_tienda {
+                    display: block;
+                    overflow: hidden; 
+                    margin-bottom: 30px;
+                      .tienda {
+                          .box_logo_tienda {
+                              border: 1px solid black;
+                              min-height: 80px;
+                              position: relative;
+                              overflow: hidden;
+                              .logo_tienda {
+                                @include centerer(true, true);
+                                background-size: cover !important;
+                                background-position: center center !important;
+                                background-repeat: no-repeat !important;
+                                width: 70px;
+                                  // @media(max-width: 1024px){
+                                  //    padding: 10px;
+                                  // }
+                              }
+                          }
+                      } // tienda
+                  }// item tienda
+                .datos_promo {
+                  position: relative;
+                  min-height: 340px;
+                  margin-bottom: 40px;
+                    @media(max-width:1024px){
+                           min-height:310px;
+                      }
+                     @media(max-width:768px){
+                           min-height:0;
+                      }
+                    h3{
+                          @include clarendon(24px, black);
+                          text-transform: uppercase;
+                           @media(max-width:1024px){
+                           font-size: 22px;
+                          }
+                           @media(max-width:768px){
+                           font-size: 14px;
+                          }
+                    }
+                    p{
+                          @include bold(14px, black);
+                          text-transform: uppercase;
+                          margin-top: 24px;
+                            @media(max-width:1024px){
+                           font-size: 12px;
+                          }
+                           @media(max-width:768px){
+                           font-size: 11px;
+                           margin-top: 15px;
+                          }
+                    }
+
+                    .box_bottom{
+                      position: absolute;
+                      bottom: 0;
+                        @media(max-width:768px){
+                             position: relative;
+                             bottom: auto;
+                      }
+                        .condicion{
+                          p{
+                              @include italic(20px, black);
+                              text-transform: uppercase;
+                              margin-top: 0;
+                              margin-bottom: 0;
+                               @media(max-width:1024px){
+                                  font-size: 18px;
+                            }
+                                @media(max-width:768px){
+                                  font-size: 14px;
+                            }
+                          }
+                        }
+                        .horario{
+                          p{
+                            @include bold(22px, $rojo);
+                            text-transform: uppercase;
+                            margin-top: 0;
+                               @media(max-width:1024px){
+                                  font-size: 16px;
+                            }
+                              @media(max-width:768px){
+                               font-size: 14px;
+                              }
+                          }
+                        }
+                        .valor{
+                          p{
+                            @include bold(36px, $rojo);
+                            text-transform: uppercase;
+                            margin-top: 0;
+                              @media(max-width:1024px){
+                                  font-size: 36px;
+                            }
+                              @media(max-width:768px){
+                                  font-size: 20px;
+                            }
+                          }
+                        }
+                     }
+
+                }
+
+                   .box_ver_mas_tiendas {
+                
+                  a{
+                    display: inline-block;
+                    transition: all .5s ease;
+                    h3{
+
+                      &.ver_mas{
+                          @include clarendon(12px, black);
+                          text-transform: uppercase;
+                          margin-bottom: 10px;
+                      }
+
+                    }
+
+                      &.btn_ver_mas{
+                        background-color: transparent;
+                        border: none;
+                          img{
+                            &.arrow_down{
+
+                            }
+                          }
+                      }
+                      &:hover{
+                        opacity: 0.7;
+                      }
+                  }
+                }
+      }
+} // cartelera
+
+

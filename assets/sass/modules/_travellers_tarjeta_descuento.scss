@@ -1,0 +1,164 @@
+section.tarjeta_descuento {
+    padding: 0 0 30px 0;
+    @media(max-width: 991px){
+      padding-bottom: 50px;
+    }
+
+  h4 {
+    @include clarendon(20px, black);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+     @media(max-width: 768px){
+         font-size: 18px;
+    }
+     @media(max-width: 375px){
+         font-size: 16px;
+    }
+  }
+  p{
+    @include clarendon(14px, black);
+    margin-left: 15px;  
+  }
+      .divider{
+        color:black;
+        margin:0 0 30px 15px;
+        overflow:hidden;
+        text-align:left;   
+     
+    }
+
+      .divider:before{
+          content:"";
+          vertical-align:middle;
+          display:inline-block;
+          width:60px;
+          border-bottom:1px solid black;
+          margin-top: -6px;
+    
+      }
+      .divider:before{
+        margin-right: 10px;
+      }
+
+      #form_tarjeta_descuento {
+            margin-top: 50px;
+
+            .form-group {
+              margin-bottom: 30px;
+              position: relative;
+                .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+                  width: 100%;
+                }
+           
+
+                        span{
+                          &.filter-option{
+                                letter-spacing: 2px;
+                              @include bold(10px, $gris);
+                              text-transform: uppercase;
+                              font-style: italic;
+                             transition: all .3s ease;
+                             &:hover{
+                              color: black;
+                             }
+                          }
+                          &.caret {
+                            color: black;
+                          }
+                        }
+
+                          .btn-default{
+                            border-color: black;
+                            border-radius: 0;
+                            padding-top: 8px;
+                            width: 100%;
+                            height: 50px;
+                            &:hover, &:focus {
+                              background-color:white;
+                            }
+                          }
+                          .dropdown-menu{
+                            ul {
+                              li{
+                                
+                                a{
+                                 @include bold(11px, black);
+                                 text-transform: uppercase;
+                                }
+                              }
+                            }
+                          }
+
+                label {
+                  @include bold(14px, black);
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                  &.subscribe{
+                     @include italic(12px, black);
+                     text-transform: none;
+                  }
+                }
+                input, textarea {
+                    
+                  &.form-control{
+                    border-radius: 0;
+                    border-color: black;
+                    height: 50px;
+                  }
+                  &.form-control::-webkit-input-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+                  &.form-control:-moz-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+                  &.form-control::-moz-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+                  &.form-control:-ms-input-placeholder {
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                      @include bold(10px, $gris);
+                      font-style: italic;
+                    }
+
+                }    
+                textarea.form-control{
+                  padding: 10px;
+                  height: 100px;
+                  resize: none;
+                }
+                .btn_rojo {
+                  border-radius:0;
+                  border-color: transparent;
+                  font-size: 14px;
+                  padding: 14px;
+                  margin-top: 0;
+                  width: 200px;
+                  float: right;
+                  display: block;
+                    &:hover {
+                      border-color: black;
+                    }
+                  @media(max-width: 991px){
+                      float: none;
+                      margin-top: 20px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 90%;
+                      font-size: 18px;
+                  }
+                }
+
+               
+            }
+      } // end form tarjeta descuento
+}

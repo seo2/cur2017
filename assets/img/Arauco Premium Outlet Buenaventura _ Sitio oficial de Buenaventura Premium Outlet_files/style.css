@@ -1,0 +1,121 @@
+/*
+Theme Name: Parque Arauco
+Theme URI: http://parquearauco.cl
+Description: version 2012 del sitio web
+Author: Raya
+Version: 0.0.1
+*/
+
+.publicacion p { padding: 5px 0 5px;}
+.subCatEntActivo { color: #EE2E24 !important; font-weight: bold; }
+.destacados h4 { font-weight: bold; margin-bottom:5px; height:30px;}
+/*.col230 h4 { font-weight: bold; }*/
+#contenedorResumen { max-height: 75px;    min-height: 20px;    overflow: hidden;}
+
+
+/* Buscadores */
+
+#searchform{font-size: 12px;
+    margin: 0 auto 0 10px;
+    padding: 2px 0;
+    position: absolute;
+    right: 42px;
+	border-left: 1px solid #4D4D4D;
+}
+#searchform li{float: left; list-style: none; margin-left: 30px; position: relative;}
+#searchform li:first-child{margin-left: 0;}
+.formTiendas li {background:#FFF;}
+
+label.buscHead{
+	-moz-transition: right 0.3s ease 0s;
+	-webkit-transition: right 0.3s ease 0s;
+	-o-transition: right 0.3s ease 0s;
+    bottom: 0;
+    line-height: 40px;
+    position: absolute;
+    right: 202px;
+	top: -2px;
+    z-index: 0;
+	display:none;
+	}
+
+label.buscarTiendas{
+	-moz-transition: right 0.3s ease 0s;
+    bottom: 0;
+    line-height: 40px;
+    position: absolute;
+    right: 164px;
+    top: -3px;
+    width: 70px;
+    z-index: 99;
+}
+		
+#searchform input{ -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+	}
+
+input[type="email"], input[type="password"]{height: 35px; padding: 0 10px; width: 225px; position: relative;
+	-moz-box-shadow: inset 0 0 10px rgba(0,0,0,.06);
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.06);
+	box-shadow: inset 0 0 10px rgba(0,0,0,.06);
+	z-index: 2;}
+
+input[type="email"]{color: #F4F4F4; background:none;}
+input[type="email"].buscTiendas{color: #666; background:rgba(255,255,255,.1) !important;}
+
+
+input[type="email"]:-moz-placeholder{color: #999; background:#000;}
+input.buscTiendas[type="email"]:-moz-placeholder{color: #999; background:#FFF !important;}
+input.buscTiendas[type="email"]:-ms-input-placeholder{color: rgba(153,153,153,.6);}
+input.buscTiendas[type="email"]::-webkit-input-placeholder{color: rgba(153,153,153,.6);}
+
+input[type="email"] + label{color: #999;}
+
+input:focus + label{right: 5px;}
+
+input[type="email"]:focus {background-color: rgba(0,0,0,.1);}
+
+
+input[type="submit"]{
+	background-color: #333;
+	background: -moz-linear-gradient(bottom, #333, #444);
+	background: -ms-linear-gradient(bottom, #333, #444);
+	background: -o-linear-gradient(bottom, #333, #444);
+	background: -webkit-linear-gradient(bottom, #333, #444);
+	background: linear-gradient(bottom, #333, #444);
+	color: #fff; cursor: pointer; height: 35px; width: 110px;
+	opacity:0.7;
+}
+
+input[type="submit"]:hover{/*color: blue;*/ text-shadow: 0 0 1px rgba(255,255,255,.2); opacity:1;}
+#searchform input#s {background: none repeat scroll 0 0 #000000;
+    color: #CCCCCC;
+    height: 30px;
+    margin: 3px 0;
+    padding: 0 5px;
+    width: 200px;}
+#searchform ul {float:right;}
+
+ /* SLIDER */
+ 	#my_slider {
+	display:block;
+    height:450px;
+    overflow: hidden;
+    list-style: none outside none;
+    padding:0;
+    margin:0;
+	}
+	#my_slider li {
+		top: 0px;
+		left: 0px;
+		display:none;
+	}
+	#my_slider li:first-child {
+		display:block;
+	}
+	.prev_button {position:absolute;top:50%;left:5px;z-index:100;width:38px;height:38px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url("../img/btnleft_tienda.jpg") no-repeat scroll left top transparent;}
+	.next_button {position:absolute;top:50%;right:5px;z-index:100;width:38px;height:38px;overflow:hidden;text-indent:-9999em;margin-top:-25px; background:url("../img/btnright_tienda.jpg") no-repeat scroll left top transparent;}
